@@ -60,26 +60,87 @@
 .footer h3 {
   font-family: "Poltawski Nowy", serif;
 }
-.footer ul {
+.footer .wrapper {
+  display: inline-flex;
   list-style: none;
-  padding: 5px;
+}
+.footer .wrapper .icon {
+  width: 50px;
+  height: 50px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 40px;
+  gap: 0px;
+  border-radius: 50px;
   border-style: groove;
-  border-radius: 75px;
-  border-color: black;
+  border-color: transparent;
+  border-width: 1px;
+  position: relative;
+  background: #ffffff;
+  margin: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.footer ul li svg {
-  width: 35px;
+.footer .wrapper .icon .tooltip {
+  border-radius: 50px;
+  position: absolute;
+  top: 0;
+  font-size: 15px;
+  padding: 5px 8px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.footer .wrapper .icon .tooltip:before {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  content: "";
+  background: rgb(255, 253, 253);
+  bottom: -10px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.footer .wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.footer .wrapper .icon:hover svg span {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+.footer .wrapper .instagram:hover, .footer .wrapper .instagram .tooltip, .footer .wrapper .instagram:before {
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  color: white;
+}
+.footer .wrapper .facebook:hover, .footer .wrapper .facebook .tooltip, .footer .wrapper .facebook:before {
+  background: #1877F2;
+  color: white;
+}
+.footer .wrapper .whatsapp:hover, .footer .wrapper .whatsapp .tooltip, .footer .wrapper .whatsapp:before {
+  background: green;
+  color: white;
+}
+.footer .wrapper .icon span svg {
+  color: black;
+  width: 28px;
   height: auto;
-  color: #222;
+}
+.footer .wrapper .icon:hover span svg {
+  color: white;
 }
 
 main {
+  background: url();
+  background-attachment: fixed;
+  background-size: cover;
   padding: 20px 50px;
   display: flex;
   flex-direction: row;
@@ -131,7 +192,7 @@ main div .galery div img:hover {
   -moz-transition: all 0.3s ease-in;
   -ms-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  transition: all 0.4s ease-in-out;
   opacity: 1;
   transform: scale(1.15);
   -ms-transform: scale(1.15); /* IE 9 */

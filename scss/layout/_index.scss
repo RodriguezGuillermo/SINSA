@@ -1,4 +1,7 @@
 main{
+    background: url();
+    background-attachment: fixed;
+    background-size: cover;
     padding: 20px 50px;
     @include display-flex(row,center,center,nowrap,10vh);
     div{
@@ -28,7 +31,7 @@ main{
                         -moz-transition: all .3s ease-in;
                         -ms-transition: all .3s ease-in;
                         -o-transition: all .3s ease-in;
-                        transition: all .3s ease-in;
+                        transition: all .4s ease-in-out;
                         opacity: 1;
                         transform: scale(1.15);
                         -ms-transform: scale(1.15); /* IE 9 */

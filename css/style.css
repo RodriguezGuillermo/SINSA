@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poltawski+Nowy&family=Roboto+Slab:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poltawski+Nowy&family=Roboto+Slab:wght@200;300&family=Ubuntu:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.generalNavBar {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+.generalNavBar .nbDiv1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.generalNavBar .nbDiv1 h1 {
+  font-size: 60px;
+  font-family: "Poltawski Nowy", serif;
+}
+.generalNavBar .nbDiv1 img {
+  width: 128px;
+  height: auto;
+}
+.generalNavBar .nbDiv2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 50px;
+}
+.generalNavBar .nbDiv2 .btn {
+  border-radius: 50px;
+  border-style: groove;
+  border-color: black;
+  border-width: 3px;
+  font-family: "Poltawski Nowy", serif;
+  font-size: 20px;
+}
+
+.footer {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+.footer h3 {
+  font-family: "Poltawski Nowy", serif;
+}
+.footer ul {
+  list-style: none;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 40px;
+  border-style: groove;
+  border-radius: 75px;
+  border-color: black;
+}
+.footer ul li svg {
+  width: 35px;
+  height: auto;
+  color: #222;
+}
+
+main {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10vh;
+}
+main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+main div h2 {
+  font-family: "Poltawski Nowy", serif;
+  text-align: center;
+}
+main div ul li {
+  font-size: 1.75rem;
+  font-family: "Poltawski Nowy", serif;
+  text-align: justify;
+}
+main div .galery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+main div .galery div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+main div .galery div img {
+  width: 200px;
+  height: auto;
+}
+main div .galery div img:hover {
+  color: #424242;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  opacity: 1;
+  transform: scale(1.15);
+  -ms-transform: scale(1.15); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+}
+
+/*# sourceMappingURL=style.css.map */

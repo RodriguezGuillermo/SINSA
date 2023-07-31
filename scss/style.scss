@@ -1,0 +1,11 @@
+//IMPORT BASE
+@import 'base/variables';
+@import 'base/resets';
+@import 'base/utilities';
+
+//IMPORTS COMPONENTS
+@import 'components/navbar';
+@import 'components/footer';
+
+//IMPORTS LAYOUT
+@import 'layout/index';

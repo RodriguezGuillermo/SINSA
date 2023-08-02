@@ -137,7 +137,7 @@
   color: white;
 }
 
-main {
+.sectionIndex {
   background: url();
   background-attachment: fixed;
   background-size: cover;
@@ -147,26 +147,9 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 10vh;
+  gap: 10vw;
 }
-main div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 10px;
-}
-main div h2 {
-  font-family: "Poltawski Nowy", serif;
-  text-align: center;
-}
-main div ul li {
-  font-size: 1.75rem;
-  font-family: "Poltawski Nowy", serif;
-  text-align: justify;
-}
-main div .galery {
+.sectionIndex .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -174,7 +157,20 @@ main div .galery {
   flex-wrap: nowrap;
   gap: 5px;
 }
-main div .galery div {
+.sectionIndex .info h2 {
+  font-family: "Poltawski Nowy", serif;
+  font-size: 30px;
+  text-align: center;
+}
+.sectionIndex .info .galery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+.sectionIndex .info .galery div {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -182,11 +178,11 @@ main div .galery div {
   flex-wrap: nowrap;
   gap: 5px;
 }
-main div .galery div img {
-  width: 200px;
+.sectionIndex .info .galery div img {
+  width: 150px;
   height: auto;
 }
-main div .galery div img:hover {
+.sectionIndex .info .galery div img:hover {
   color: #424242;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
@@ -197,6 +193,206 @@ main div .galery div img:hover {
   transform: scale(1.15);
   -ms-transform: scale(1.15); /* IE 9 */
   -webkit-transform: scale(2); /* Safari and Chrome */
+}
+.sectionIndex .actividades h2 {
+  font-family: "Poltawski Nowy", serif;
+  font-size: 30px;
+  text-align: center;
+}
+.sectionIndex .actividades ul {
+  list-style: none;
+}
+.sectionIndex .actividades ul li {
+  font-family: "Poltawski Nowy", serif;
+  font-size: 1.65rem;
+  text-align: center;
+}
+
+.sectionContacto {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.sectionContacto h2 {
+  font-family: "Poltawski Nowy", serif;
+  font-size: 40px;
+  text-align: center;
+}
+.sectionContacto .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.sectionContacto .container .direccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.sectionContacto .container .direccion h2 {
+  font-family: "Poltawski Nowy", serif;
+  font-size: 25px;
+  text-align: center;
+}
+.sectionContacto .container .telefonos {
+  width: 100vw;
+}
+.sectionContacto .container .telefonos ul li {
+  font-family: "Poltawski Nowy", serif;
+  font-size: 30px;
+  text-align: center;
+  border-style: groove;
+}
+
+.empresa {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+.empresa .info1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.empresa .info1 div {
+  width: 50vw;
+}
+.empresa .info1 div h2 {
+  font-family: "Poltawski Nowy", serif;
+  font-size: xx-large;
+  text-align: center;
+}
+.empresa .info1 div p {
+  font-family: "Poltawski Nowy", serif;
+  font-size: x-large;
+  text-align: justify;
+}
+.empresa .info1 img {
+  width: 300px;
+  height: auto;
+}
+.empresa .info2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.empresa .info2 img {
+  width: 300px;
+  height: auto;
+}
+.empresa .info2 div {
+  width: 50vw;
+}
+.empresa .info2 div h2 {
+  font-family: "Poltawski Nowy", serif;
+  font-size: xx-large;
+  text-align: center;
+}
+.empresa .info2 div p {
+  font-family: "Poltawski Nowy", serif;
+  font-size: x-large;
+  text-align: justify;
+}
+.empresa .info2 div ul {
+  list-style: circle;
+}
+.empresa .info2 div ul li {
+  font-family: "Poltawski Nowy", serif;
+  font-size: x-large;
+  text-align: justify;
+}
+
+.equipo {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.equipo .titulo h2 {
+  font-family: "Poltawski Nowy", serif;
+  font-size: x-large;
+  text-align: center;
+}
+.equipo .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.equipo .info .imagenes {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.equipo .info .imagenes img {
+  width: 250px;
+  height: auto;
+}
+.equipo .info .texto {
+  width: 30vw;
+}
+.equipo .info .texto h2 {
+  font-family: "Poltawski Nowy", serif;
+  font-size: xx-large;
+  text-align: center;
+}
+.equipo .info .texto p {
+  font-family: "Poltawski Nowy", serif;
+  font-size: x-large;
+  text-align: justify;
+}
+
+.clientes {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.clientes h2 {
+  font-family: "Poltawski Nowy", serif;
+  font-size: 60px;
+  text-align: center;
+}
+.clientes .logos {
+  display: flex;
+}
+.clientes .logos img {
+  object-fit: cover;
+  width: auto;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

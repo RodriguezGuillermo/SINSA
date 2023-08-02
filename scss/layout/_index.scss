@@ -1,30 +1,21 @@
-main{
+.sectionIndex{
     background: url();
     background-attachment: fixed;
     background-size: cover;
     padding: 20px 50px;
-    @include display-flex(row,center,center,nowrap,10vh);
-    div{
-        
-        @include display-flex(column,center,center,nowrap,10px);
+    @include display-flex(row,center,center,nowrap,10vw);
+    .info{
+        @include display-flex(column,center,center,nowrap,5px);
         h2{
-            font-family: $title-font;
-            text-align: center;
-        }
-        ul{
-            li{
-                font-size: 1.75rem;
-                font-family: $text-font;
-                text-align: justify
-            }
-            
+            @include font-style($title-font,30px,center);
         }
         .galery{
             @include display-flex(column,center,center,nowrap,5px);
+            
             div{
                 @include display-flex(row,center,center,nowrap,5px);
                 img{
-                    @include width-height(200px,auto);
+                    @include width-height(150px,auto);
                     &:hover{
                         color: #424242; 
                         -webkit-transition: all .3s ease-in;
@@ -39,7 +30,19 @@ main{
                     }
                 }
             }
+        }   
+    }
+    .actividades{
+        h2{
+            @include font-style($title-font,30px,center);
+        }
+        ul{
+            list-style: none;
+            li{
+                @include font-style($text-font,1.65rem,center);
+            }
             
         }
     }
+    
 }

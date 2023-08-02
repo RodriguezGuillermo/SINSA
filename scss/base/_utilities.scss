@@ -16,3 +16,9 @@
     border-color: $color;
     border-width: $width;
 }
+
+@mixin font-style($family,$size,$align){
+    font-family: $family;
+    font-size: $size;
+    text-align: $align;
+};

@@ -1,0 +1,85 @@
+
+.empresa{
+    padding: 20px;
+    @include display-flex(column, center, center, nowrap, 40px);
+    .info1{
+        @include display-flex(row, center, center, nowrap, 20px);
+        div{
+            width: 50vw;
+            h2{
+                @include font-style($title-font,xx-large,center);
+            }
+            p{
+                @include font-style($text-font,x-large, justify);
+            }
+        }
+        img{
+            @include width-height(300px,auto);
+        }
+    }
+    .info2{
+        @include display-flex(row, center, center, nowrap, 20px);
+        img{
+            @include width-height(300px,auto);
+        }
+        div{
+            width: 50vw;
+            h2{
+                @include font-style($title-font,xx-large,center);
+            }
+            p{
+                @include font-style($text-font,x-large, justify);
+            }
+            ul{
+                list-style: circle;
+                li{
+                    @include font-style($text-font,x-large, justify);
+                }
+            }
+        }
+    }
+}
+.equipo{
+    padding: 20px;
+    @include display-flex(column, center, center, nowrap, 10px);
+    .titulo{
+        h2{
+            @include font-style($title-font,x-large,center);
+        }
+    }
+    .info{
+        @include display-flex(row, center, center, nowrap, 10px);
+        .imagenes{
+            width: 30vw;
+            @include display-flex(column, center, center, nowrap, 10px);
+            img{
+                @include width-height(250px,auto);
+            }
+        }
+        .texto{
+            width: 30vw;
+            h2{
+                @include font-style($title-font,xx-large,center);
+            }
+            p{
+                @include font-style($text-font,x-large,justify);
+            }
+        }
+    }
+}
+.clientes{
+    padding: 20px;
+    @include display-flex (column, center,center,nowrap,10px);
+    h2{
+        @include font-style($text-font,60px,center);
+    }
+    .logos{
+        display: flex;
+        img{
+            object-fit: cover;
+            @include width-height (auto, 150px);
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

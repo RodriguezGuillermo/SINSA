@@ -73,13 +73,22 @@
     h2{
         @include font-style($text-font,60px,center);
     }
-    .logos{
-        display: flex;
-        img{
-            object-fit: cover;
-            @include width-height (auto, 150px);
-            align-items: center;
-            justify-content: center;
+    .carousels{
+        @include display-flex (row, center,center,wrap,10vw);
+        .carousel{
+            .carousel-inner{
+                width: 300px;
+                height: 400px;
+                text-align: center;
+                .carousel-item{
+                    img{
+                        object-fit: fill;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
         }
     }
+    
 }

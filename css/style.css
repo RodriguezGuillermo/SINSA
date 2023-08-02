@@ -384,15 +384,23 @@
   font-size: 60px;
   text-align: center;
 }
-.clientes .logos {
+.clientes .carousels {
   display: flex;
-}
-.clientes .logos img {
-  object-fit: cover;
-  width: auto;
-  height: 150px;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10vw;
+}
+.clientes .carousels .carousel .carousel-inner {
+  width: 300px;
+  height: 400px;
+  text-align: center;
+}
+.clientes .carousels .carousel .carousel-inner .carousel-item img {
+  object-fit: fill;
+  width: 100%;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

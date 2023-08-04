@@ -7,15 +7,23 @@
 }
 
 .generalNavBar {
-  padding: 20px 0px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   gap: 5px;
+  width: 70vw;
+  height: auto;
+  border-bottom-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+  background-color: rgb(212, 212, 212);
+  position: relative;
+  left: 15%;
 }
 .generalNavBar .nbDiv1 {
+  padding: 15px 0px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -24,11 +32,12 @@
   gap: 10px;
 }
 .generalNavBar .nbDiv1 h1 {
-  font-size: 60px;
+  font-size: 4vw;
   font-family: "Poltawski Nowy", serif;
+  box-shadow: 5px 5px 5px rgb(95, 96, 96);
 }
 .generalNavBar .nbDiv1 img {
-  width: 128px;
+  width: 150px;
   height: auto;
 }
 .generalNavBar .nbDiv2 {
@@ -37,25 +46,40 @@
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 50px;
+  gap: 1.5vw;
 }
 .generalNavBar .nbDiv2 .btn {
-  border-radius: 50px;
+  border-radius: 15px;
   border-style: groove;
-  border-color: black;
+  border-color: rgb(167, 167, 167);
   border-width: 3px;
   font-family: "Poltawski Nowy", serif;
-  font-size: 20px;
+  font-size: 1.2vw;
+  box-shadow: 5px 5px rgb(95, 96, 96);
+  position: relative;
+  transition: all ease-in-out;
+}
+.generalNavBar .nbDiv2 .btn:hover {
+  top: 5px;
+  left: 5px;
+  box-shadow: none;
 }
 
 .footer {
-  padding: 20px 0px;
+  padding-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   gap: 5px;
+  width: 70vw;
+  height: auto;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background-color: rgb(212, 212, 212);
+  position: relative;
+  left: 15%;
 }
 .footer h3 {
   font-family: "Poltawski Nowy", serif;
@@ -137,75 +161,56 @@
   color: white;
 }
 
-.sectionIndex {
-  background: url();
+body {
+  background: url("../../images/bg.jpg");
   background-attachment: fixed;
   background-size: cover;
+}
+
+.sectionIndex {
   padding: 20px 50px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 10vw;
-}
-.sectionIndex .info {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 5px;
+  gap: 10px;
 }
-.sectionIndex .info h2 {
+.sectionIndex h2 {
   font-family: "Poltawski Nowy", serif;
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
 }
-.sectionIndex .info .galery {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 5px;
-}
-.sectionIndex .info .galery div {
+.sectionIndex .servicios {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 5px;
+  gap: 150px;
 }
-.sectionIndex .info .galery div img {
-  width: 150px;
-  height: auto;
+.sectionIndex .servicios .card img {
+  width: auto;
+  height: 350px;
+  object-fit: fill;
 }
-.sectionIndex .info .galery div img:hover {
-  color: #424242;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.4s ease-in-out;
-  opacity: 1;
-  transform: scale(1.15);
-  -ms-transform: scale(1.15); /* IE 9 */
-  -webkit-transform: scale(2); /* Safari and Chrome */
+.sectionIndex .servicios .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
 }
-.sectionIndex .actividades h2 {
+.sectionIndex .servicios .card .card-body h5 {
   font-family: "Poltawski Nowy", serif;
   font-size: 30px;
   text-align: center;
 }
-.sectionIndex .actividades ul {
-  list-style: none;
-}
-.sectionIndex .actividades ul li {
+.sectionIndex .servicios .card .card-body .btn {
   font-family: "Poltawski Nowy", serif;
-  font-size: 1.65rem;
-  text-align: center;
+  font-size: 20px;
+  text-align: right;
 }
 
 .sectionContacto {
@@ -245,12 +250,14 @@
 }
 .sectionContacto .container .telefonos {
   width: 100vw;
+  background-color: lightgray;
 }
 .sectionContacto .container .telefonos ul li {
   font-family: "Poltawski Nowy", serif;
   font-size: 30px;
   text-align: center;
   border-style: groove;
+  padding: 5px;
 }
 
 .empresa {
@@ -321,6 +328,39 @@
   text-align: justify;
 }
 
+.clientes {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.clientes h2 {
+  font-family: "Poltawski Nowy", serif;
+  font-size: 60px;
+  text-align: center;
+}
+.clientes .carousels {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10vw;
+}
+.clientes .carousels .carousel .carousel-inner {
+  width: 300px;
+  height: 400px;
+  text-align: center;
+}
+.clientes .carousels .carousel .carousel-inner .carousel-item img {
+  object-fit: fill;
+  width: 100%;
+  height: auto;
+}
+
 .equipo {
   padding: 20px;
   display: flex;
@@ -353,11 +393,12 @@
   gap: 10px;
 }
 .equipo .info .imagenes img {
+  object-fit: cover;
   width: 250px;
-  height: auto;
+  height: 250px;
 }
 .equipo .info .texto {
-  width: 30vw;
+  width: 40vw;
 }
 .equipo .info .texto h2 {
   font-family: "Poltawski Nowy", serif;
@@ -370,37 +411,47 @@
   text-align: justify;
 }
 
-.clientes {
+.equipamiento {
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 10px;
+  gap: 5px;
 }
-.clientes h2 {
+.equipamiento .equipamiento-info {
+  width: 80vw;
+}
+.equipamiento .equipamiento-info h2 {
   font-family: "Poltawski Nowy", serif;
-  font-size: 60px;
+  font-size: xx-large;
   text-align: center;
 }
-.clientes .carousels {
+.equipamiento .equipamiento-info p {
+  font-family: "Poltawski Nowy", serif;
+  font-size: x-large;
+  text-align: justify;
+}
+.equipamiento .equipamiento-galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.equipamiento .equipamiento-galeria div {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10vw;
+  gap: 10px;
 }
-.clientes .carousels .carousel .carousel-inner {
-  width: 300px;
-  height: 400px;
-  text-align: center;
-}
-.clientes .carousels .carousel .carousel-inner .carousel-item img {
-  object-fit: fill;
-  width: 100%;
-  height: auto;
+.equipamiento .equipamiento-galeria div img {
+  width: auto;
+  height: 250px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,47 +1,32 @@
-.sectionIndex{
-    background: url();
+body{
+    background: url('../../images/bg.jpg');
     background-attachment: fixed;
     background-size: cover;
+}
+.sectionIndex{
+    
     padding: 20px 50px;
-    @include display-flex(row,center,center,nowrap,10vw);
-    .info{
-        @include display-flex(column,center,center,nowrap,5px);
-        h2{
-            @include font-style($title-font,30px,center);
-        }
-        .galery{
-            @include display-flex(column,center,center,nowrap,5px);
+    @include display-flex(column,center,center,nowrap,10px);
+    h2{
+        @include font-style($title-font,50px,center);
+    }
+    .servicios{
+        @include display-flex(row,center,center,nowrap,150px);
+        .card{
+            img{
+                @include width-height(auto,350px);
+                object-fit: fill;
+            }
             
-            div{
-                @include display-flex(row,center,center,nowrap,5px);
-                img{
-                    @include width-height(150px,auto);
-                    &:hover{
-                        color: #424242; 
-                        -webkit-transition: all .3s ease-in;
-                        -moz-transition: all .3s ease-in;
-                        -ms-transition: all .3s ease-in;
-                        -o-transition: all .3s ease-in;
-                        transition: all .4s ease-in-out;
-                        opacity: 1;
-                        transform: scale(1.15);
-                        -ms-transform: scale(1.15); /* IE 9 */
-                        -webkit-transform: scale(2); /* Safari and Chrome */
-                    }
+            .card-body{
+                @include display-flex(column,center,center,nowrap,10px);
+                h5{
+                    @include font-style($title-font,30px,center);
+                }
+                .btn{
+                    @include font-style($text-font,20px,right);
                 }
             }
-        }   
-    }
-    .actividades{
-        h2{
-            @include font-style($title-font,30px,center);
-        }
-        ul{
-            list-style: none;
-            li{
-                @include font-style($text-font,1.65rem,center);
-            }
-            
         }
     }
     

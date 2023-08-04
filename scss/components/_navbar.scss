@@ -1,35 +1,44 @@
 .generalNavBar{
-    padding: 20px 0px;
+    padding-bottom:20px;
     @include display-flex(column,center,center,nowrap,5px);
+    @include width-height (70vw, auto);
+    
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    background-color: rgb(212, 212, 212);
+    
+    
+    position: relative;
+    left: 15%;
+
     .nbDiv1{
+        padding: 15px 0px;
         @include display-flex(row,center,center,nowrap,10px);
         h1{
-            font-size: 60px;
+            font-size: 4vw;
             font-family: $title-font;
+            box-shadow: 5px 5px 5px rgb(95, 96, 96);
+
         }
         img{
-            @include width-height (128px, auto);
+            @include width-height (150px, auto);
         }
     }
     .nbDiv2{
-        @include display-flex(row,center,center,nowrap,50px);
+        @include display-flex(row,center,center,nowrap,1.5vw);
         .btn{
-            @include border-style(50px, groove, black,3px);
+            @include border-style(15px, groove, rgb(167, 167, 167),3px);
             font-family: $title-font;
-            font-size: 20px;
-            // box-shadow: 
-            //     5px 5px 0 black,
-            //     -5px -5px 0 black,
-            //     -5px 5px 0 black,
-            //     5px -5px 0 black;
-            // transition: 500ms ease-in-out;
-            // 
-            // &:hover{
-            //     box-shadow: 20px 5px 0 black, -20px -5px 0 black;
-            // }
-            // &:focus{
-            //     outline: none;
-            // }
+            font-size: 1.2vw;
+            box-shadow: 5px 5px rgb(95, 96, 96);
+            position: relative;
+            transition: all ease-in-out;
+
+            &:hover{
+                top: 5px;
+                left: 5px;
+                box-shadow:none ;
+            }
         }
 
     }

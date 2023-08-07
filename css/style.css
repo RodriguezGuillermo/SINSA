@@ -32,7 +32,7 @@
   gap: 10px;
 }
 .generalNavBar .nbDiv1 h1 {
-  font-size: 4vw;
+  font-size: 3.5vw;
   font-family: "Poltawski Nowy", serif;
   box-shadow: 5px 5px 5px rgb(95, 96, 96);
 }
@@ -187,12 +187,12 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 150px;
+  gap: 15px;
 }
 .sectionIndex .servicios .card img {
-  width: auto;
+  width: 400px;
   height: 350px;
-  object-fit: fill;
+  object-fit: cover;
 }
 .sectionIndex .servicios .card .card-body {
   display: flex;
@@ -353,10 +353,11 @@ body {
 .clientes .carousels .carousel .carousel-inner {
   width: 300px;
   height: 400px;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 .clientes .carousels .carousel .carousel-inner .carousel-item img {
-  object-fit: fill;
+  object-fit: contain;
   width: 100%;
   height: auto;
 }
@@ -452,6 +453,51 @@ body {
 .equipamiento .equipamiento-galeria div img {
   width: auto;
   height: 250px;
+}
+
+.servicios-navales {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.servicios-navales h2 {
+  font-family: "Poltawski Nowy", serif;
+  font-size: 50px;
+  text-align: center;
+}
+.servicios-navales .servNavales {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 30px;
+}
+.servicios-navales .servNavales ul {
+  list-style-type: square;
+  width: 35vw;
+}
+.servicios-navales .servNavales ul li {
+  font-family: "Poltawski Nowy", serif;
+  font-size: x-large;
+  text-align: justify;
+}
+.servicios-navales .servNavales .serNavales-galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.servicios-navales .servNavales .serNavales-galeria div img {
+  object-fit: cover;
+  width: 250px;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -11,11 +11,11 @@ body{
         @include font-style($title-font,50px,center);
     }
     .servicios{
-        @include display-flex(row,center,center,nowrap,150px);
+        @include display-flex(row,center,center,nowrap,15px);
         .card{
             img{
-                @include width-height(auto,350px);
-                object-fit: fill;
+                @include width-height(400px,350px);
+                object-fit: cover;
             }
             
             .card-body{

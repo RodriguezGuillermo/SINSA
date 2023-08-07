@@ -49,14 +49,13 @@
         @include display-flex (row, center,center,wrap,10vw);
         .carousel{
             .carousel-inner{
-                width: 300px;
-                height: 400px;
-                text-align: center;
+                @include width-height(300px,400px);
+                display: flex;
+                align-items: center;
                 .carousel-item{
                     img{
-                        object-fit: fill;
-                        width: 100%;
-                        height: auto;
+                        object-fit: contain;
+                        @include width-height(100%,auto);
                     }
                 }
             }

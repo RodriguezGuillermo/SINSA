@@ -15,8 +15,7 @@
         padding-top: 15px;
         @include display-flex(row,center,center,nowrap,10px);
         h1{
-            font-size: 3.5vw;
-            font-family: $title-font;
+            @include font-style($text-font,3.5vw,center);
             box-shadow: 5px 5px 5px rgb(95, 96, 96);
 
         }
@@ -28,8 +27,7 @@
         @include display-flex(row,center,center,nowrap,1.5vw);
         .btn{
             @include border-style(15px, groove, rgb(167, 167, 167),3px);
-            font-family: $title-font;
-            font-size: 1.2vw;
+            @include font-style($text-font,1.2vw,center);
             box-shadow: 5px 5px rgb(95, 96, 96);
             position: relative;
             transition: all ease-in-out;
@@ -38,6 +36,12 @@
                 top: 5px;
                 left: 5px;
                 box-shadow:none ;
+            }
+        }
+        .dropdown-menu{
+            background-color:  rgb(212, 212, 212);
+            .dropdown-item{
+                @include font-style($title-font,1.2vw,center);
             }
         }
 

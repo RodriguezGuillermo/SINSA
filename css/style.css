@@ -32,8 +32,9 @@
   gap: 10px;
 }
 .generalNavBar .nbDiv1 h1 {
-  font-size: 3.5vw;
   font-family: "Poltawski Nowy", serif;
+  font-size: 3.5vw;
+  text-align: center;
   box-shadow: 5px 5px 5px rgb(95, 96, 96);
 }
 .generalNavBar .nbDiv1 img {
@@ -55,6 +56,7 @@
   border-width: 3px;
   font-family: "Poltawski Nowy", serif;
   font-size: 1.2vw;
+  text-align: center;
   box-shadow: 5px 5px rgb(95, 96, 96);
   position: relative;
   transition: all ease-in-out;
@@ -63,6 +65,14 @@
   top: 5px;
   left: 5px;
   box-shadow: none;
+}
+.generalNavBar .nbDiv2 .dropdown-menu {
+  background-color: rgb(212, 212, 212);
+}
+.generalNavBar .nbDiv2 .dropdown-menu .dropdown-item {
+  font-family: "Poltawski Nowy", serif;
+  font-size: 1.2vw;
+  text-align: center;
 }
 
 .footer {
@@ -589,6 +599,90 @@ body {
   object-fit: cover;
   width: 250px;
   height: auto;
+}
+
+.fragata {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.fragata h2 {
+  font-family: "Poltawski Nowy", serif;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline;
+}
+.fragata .fragata-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.fragata .fragata-info iframe {
+  width: 30vw;
+  height: 500px;
+}
+.fragata .fragata-info p {
+  width: 50vw;
+  font-family: "Poltawski Nowy", serif;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.irizar {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+.irizar h2 {
+  font-family: "Poltawski Nowy", serif;
+  font-size: 50px;
+  text-align: center;
+  text-decoration: underline;
+}
+.irizar .irizar-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.irizar .irizar-info .irizar-galeria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.irizar .irizar-info .irizar-galeria div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.irizar .irizar-info .irizar-galeria div img {
+  width: 12vw;
+  height: auto;
+}
+.irizar .irizar-info p {
+  width: 50vw;
+  font-family: "Poltawski Nowy", serif;
+  font-size: 20px;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */

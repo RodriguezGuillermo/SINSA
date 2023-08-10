@@ -1,0 +1,43 @@
+.fragata{
+    padding-top: 20px;
+    @include display-flex(column,center,center,nowrap,10px);
+    h2{
+        @include font-style($title-font,50px,center);
+        text-decoration: underline;
+    }
+    .fragata-info{
+        @include display-flex(row,center,center,nowrap,20px);
+        iframe{
+            @include width-height(30vw,500px);
+        }
+        p{
+            width: 50vw;
+            @include font-style($text-font,20px,justify);
+        }
+    }
+}
+.irizar{
+    padding: 20px 0px;
+    @include display-flex(column,center,center,nowrap,10px);
+    h2{
+        @include font-style($title-font,50px,center);
+        text-decoration: underline;
+    }
+    .irizar-info{
+        @include display-flex(row,center,center,nowrap,20px);
+        .irizar-galeria{
+            @include display-flex(column,center,center,wrap,10px);
+            div{
+                @include display-flex(row,center,center,wrap,10px);
+                img{
+                    @include width-height(12vw,auto);
+                }
+            }
+        }
+        p{
+            width: 50vw;
+            @include font-style($text-font,20px,justify);
+        }
+    }
+
+}

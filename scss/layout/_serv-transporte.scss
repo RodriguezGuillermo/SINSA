@@ -1,0 +1,26 @@
+.servicios-transporte{
+    padding: 20px 0px;
+    @include display-flex(column, center,center,nowrap,10px);
+    h2{
+        @include font-style($title-font,50px,center);
+    }
+    .servTransporte{
+        @include display-flex(row, center,center,nowrap,30px);
+        ul{
+            list-style-type: square;
+            width: 35vw;
+            li{
+                @include font-style($text-font,x-large,justify);
+            }
+        }
+        .servTransporte-galeria{
+            @include display-flex(column, center,center,nowrap,10px);
+            div{
+                img{
+                    object-fit: cover;
+                    @include width-height(250px,auto);
+                }
+            }
+        }
+    }
+}

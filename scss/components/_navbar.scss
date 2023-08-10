@@ -12,7 +12,7 @@
     left: 15%;
 
     .nbDiv1{
-        padding: 15px 0px;
+        padding-top: 15px;
         @include display-flex(row,center,center,nowrap,10px);
         h1{
             font-size: 3.5vw;
@@ -21,7 +21,7 @@
 
         }
         img{
-            @include width-height (150px, auto);
+            @include width-height (auto, 100px);
         }
     }
     .nbDiv2{

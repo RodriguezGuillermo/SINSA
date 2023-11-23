@@ -9,6 +9,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="../images/sinsalogo.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <title>Servicios Petroleros</title>
 </head>
 
@@ -29,6 +31,7 @@
                     <li><a class="dropdown-item" href="../pages/serv-navales.html">Industria Naval</a></li>
                     <li><a class="dropdown-item" href="../pages/serv-petroleros.html">Industria Petrolera</a></li>
                     <li><a class="dropdown-item" href="../pages/serv-transporte.html">Transporte de residuos</a></li>
+                    <li><a class="dropdown-item" href="../pages/serv-gruas.html">Gruas</a></li>
                 </ul>
                 <a href="./antecedentes.html" class="btn" role="button">Antecedentes</a>
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,33 +48,45 @@
 
     <main>
         <section class="servicios-petroleros">
-            <h2>Servicios para la industria petrolera</h2>
+            <h2>SERVICIOS PARA LA INDRUSTRIA PETROLERA</h2>
             <div class="servPetroleros">
                 <ul>
                     <li>
-                        Arenado, granallado, aplicacion de pinturas especiales en  interior y exterior de tanques.
+                        Tratamiento de superficies y pinturas en interiores y exteriores de tanques, estructuras, cañerias y accesorios de plantas.
                     </li>
                     <li>
-                        Tratamiento y disposicion final de residuos especiales.
+                        Hidrojetting a ultra alta presion ( hasta 40.000 bar y 25.000 psi), arenado, granallado ,aplicacion de pinturas especiales en interior y exterior de tanques por sistemas airless y dual en caliente hasta 50 grados.
                     </li>
                     <li>
-                        Tratamiento de superficies y pinturas en estructuras, cañerias y accesorios de plantas.
+                        Desgasificacion, limpieza de tanques de almacenamiento, retiro de fondos de hidrocarburo, residuos vegetales y minerales, remediacion de suelos contaminados con distintos residuos especiales.
                     </li>
                     <li>
-                        Desgasificacion, limpieza de tanques de almacenamiento, retiro de fondos de hidrocarburos, residuos vegetales y minerales, remedacion de suelos contaminados con distintos residuos especiales
+                        Tratamiento y disposición final de residuos especiales.
                     </li>
 
                 </ul>
                 <div class="servPetroleros-galeria">
                     <div>
-                        <img src="../images/sinsalogo.jpg" alt="">
-                        <img src="../images/sinsalogo.jpg" alt="">
-                        <img src="../images/sinsalogo.jpg" alt="">
+                        <a data-fancybox="gallery" data-src="../images/sinsalogo.jpg">
+                            <img src="../images/sinsalogo.jpg" alt="" />
+                        </a>
+                        <a data-fancybox="gallery" data-src="../images/sinsalogo.jpg">
+                            <img src="../images/sinsalogo.jpg" alt="" />
+                        </a>
+                        <a data-fancybox="gallery" data-src="../images/sinsalogo.jpg">
+                            <img src="../images/sinsalogo.jpg" alt="" />
+                        </a>
                     </div>
                     <div>
-                        <img src="../images/sinsalogo.jpg" alt="">
-                        <img src="../images/sinsalogo.jpg" alt="">
-                        <img src="../images/sinsalogo.jpg" alt="">
+                        <a data-fancybox="gallery" data-src="../images/sinsalogo.jpg">
+                            <img src="../images/sinsalogo.jpg" alt="" />
+                        </a>
+                        <a data-fancybox="gallery" data-src="../images/sinsalogo.jpg">
+                            <img src="../images/sinsalogo.jpg" alt="" />
+                        </a>
+                        <a data-fancybox="gallery" data-src="../images/sinsalogo.jpg">
+                            <img src="../images/sinsalogo.jpg" alt="" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -109,5 +124,12 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+        });  
+        
+    </script>
 </body>
 </html>

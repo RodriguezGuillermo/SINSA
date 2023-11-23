@@ -9,6 +9,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="../images/sinsalogo.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <title>Servicios de Transporte</title>
 </head>
 
@@ -29,6 +31,7 @@
                     <li><a class="dropdown-item" href="../pages/serv-navales.html">Industria Naval</a></li>
                     <li><a class="dropdown-item" href="../pages/serv-petroleros.html">Industria Petrolera</a></li>
                     <li><a class="dropdown-item" href="../pages/serv-transporte.html">Transporte de residuos</a></li>
+                    <li><a class="dropdown-item" href="../pages/serv-gruas.html">Gruas</a></li>
                 </ul>
                 <a href="./antecedentes.html" class="btn" role="button">Antecedentes</a>
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,32 +48,38 @@
 
     <main>
         <section class="servicios-transporte">
-            <h2>Transporte de residuos peligrosos</h2>
+            <h2>TRANSPORTE DE RESIDUOS PELIGROSOS</h2>
             <div class="servTransporte">
                 <ul>
                     <li>
-                        Remediacion de suelos, transporte y disposicion final de residuos peligrosos.
+                        Transporte de residuos urbanos: Camiones compactadores y portavolquetes con volquetes de distintas medidas y bateas.
                     </li>
                     <li>
-                        Retiro de slop de tanques y sentinas de buques.
-                    </li>
-                    <li>
-                        Retiro de fondos solidos con equipos de hasta 22 M3 de carga y liquidos en buques y tanques de almacenamiento.
-                    </li>
-                    <li>
-                        Servicios adicionales de gruas e hidrogruas, contenedores, atmosfericos, recoleccion de residuos domiciliario a travez de camion compactador y camiones porta-volquetes.
+                        Transporte de residuos especiales solidos y liquidos: Camiones cisterna con bomba de succion, portavolquetes con  volquetes de distintas medidas y bateas.
                     </li>
                 </ul>
                 <div class="servTransporte-galeria">
                     <div>
-                        <img src="../images/sinsalogo.jpg" alt="">
-                        <img src="../images/sinsalogo.jpg" alt="">
-                        <img src="../images/sinsalogo.jpg" alt="">
+                        <a data-fancybox="gallery" data-src="../images/sinsalogo.jpg">
+                            <img src="../images/sinsalogo.jpg" alt="" />
+                        </a>
+                        <a data-fancybox="gallery" data-src="../images/sinsalogo.jpg">
+                            <img src="../images/sinsalogo.jpg" alt="" />
+                        </a>
+                        <a data-fancybox="gallery" data-src="../images/sinsalogo.jpg">
+                            <img src="../images/sinsalogo.jpg" alt="" />
+                        </a>
                     </div>
                     <div>
-                        <img src="../images/sinsalogo.jpg" alt="">
-                        <img src="../images/sinsalogo.jpg" alt="">
-                        <img src="../images/sinsalogo.jpg" alt="">
+                        <a data-fancybox="gallery" data-src="../images/sinsalogo.jpg">
+                            <img src="../images/sinsalogo.jpg" alt="" />
+                        </a>
+                        <a data-fancybox="gallery" data-src="../images/sinsalogo.jpg">
+                            <img src="../images/sinsalogo.jpg" alt="" />
+                        </a>
+                        <a data-fancybox="gallery" data-src="../images/sinsalogo.jpg">
+                            <img src="../images/sinsalogo.jpg" alt="" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -108,5 +117,12 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+        });  
+        
+    </script>
 </body>
 </html>

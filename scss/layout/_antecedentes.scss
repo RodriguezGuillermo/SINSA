@@ -6,13 +6,13 @@
         text-decoration: underline;
     }
     .fragata-info{
-        @include display-flex(row,center,center,nowrap,20px);
+        @include display-flex(column,center,center,nowrap,20px);
         iframe{
-            @include width-height(30vw,500px);
+            @include width-height(35vw,600px);
         }
         p{
             width: 50vw;
-            @include font-style($text-font,20px,justify);
+            @include font-style($text-font,x-large,justify);
         }
     }
 }
@@ -36,7 +36,7 @@
         }
         p{
             width: 50vw;
-            @include font-style($text-font,20px,justify);
+            @include font-style($text-font,xx-large,justify);
         }
     }
 

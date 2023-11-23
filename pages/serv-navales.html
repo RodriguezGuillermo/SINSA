@@ -9,6 +9,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="../images/sinsalogo.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <title>Servicios Navales</title>
     
 </head>
@@ -30,6 +32,7 @@
                     <li><a class="dropdown-item" href="../pages/serv-navales.html">Industria Naval</a></li>
                     <li><a class="dropdown-item" href="../pages/serv-petroleros.html">Industria Petrolera</a></li>
                     <li><a class="dropdown-item" href="../pages/serv-transporte.html">Transporte de residuos</a></li>
+                    <li><a class="dropdown-item" href="../pages/serv-gruas.html">Gruas</a></li>
                 </ul>
                 <a href="./antecedentes.html" class="btn" role="button">Antecedentes</a>
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -46,29 +49,44 @@
 
     <main>
         <section class="servicios-navales">
-            <h2>Servicios para la industria naval</h2>
+            <h2>SERVICIOS PARA LA INDRUSTRIA NAVAL</h2>
             <div class="servNavales">
                 <ul>
                     <li>
-                        Tratamientos de superficies en cascos, superestructuras, cubiertas y tanques, granallado y aplicacion de pinturas especiales con sistemas airless.
+                        Tratamiento de grandes superficies, en cascos, cubiertas, superestructuras y tanques.
                     </li>
                     <li>
-                        Hidrolavado a presion de 200KG a 1000KG, rasqueteo, retiro de incrustaciones y preparacion mecanica.
+                        Hidrojetting a ultraalta presion (hasta 40.000 bar 25.000psi), arenado, granallado y aplicación de pinturas especiales por sistemas airless y dual en caliente hasta 50 grados.
                     </li>
                     <li>
-                        Desgasificacion, limpieza de tanques y sentinas, retiro de fondos oleosos, transporte y disposicion final de residuos especiales.
+                        Hidrolavado a baja y media presión, rasqueteo , retiro de incrustaciones y preparación mecánica.
+                    </li>
+                    <li>
+                        Desgasificación, limpieza de tanques y sentinas, retiro de fondos oleosos , transporte y disposicion final de residuos especiales.
                     </li>
                 </ul>
                 <div class="serNavales-galeria">
                     <div>
-                        <img src="../images/servicios navales/img1.jpg" alt="">
-                        <img src="../images/servicios navales/img2.jpg" alt="">
-                        <img src="../images/servicios navales/img3.jpg" alt="">
+                        <a data-fancybox="gallery"  id="container" data-src="../images/servicios navales/img1.1.jpg">
+                            <img src="../images/servicios navales/img1.jpg" alt="" />
+                        </a>
+                        <a data-fancybox="gallery" data-src="../images/servicios navales/img2.1.jpg">
+                            <img src="../images/servicios navales/img2.jpg" alt="" />
+                        </a>
+                        <a data-fancybox="gallery" data-src="../images/servicios navales/img3.1.jpg">
+                            <img src="../images/servicios navales/img3.jpg" alt="" />
+                        </a>
                     </div>
                     <div>
-                        <img src="../images/servicios navales/img4.jpg" alt="">
-                        <img src="../images/servicios navales/img5.jpg" alt="">
-                        <img src="../images/servicios navales/img6.jpg" alt="">
+                        <a data-fancybox="gallery" data-src="../images/servicios navales/img4.jpg">
+                            <img src="../images/servicios navales/img4.jpg" alt="" />
+                        </a>
+                        <a data-fancybox="gallery" data-src="../images/servicios navales/img5.jpg">
+                            <img src="../images/servicios navales/img5.jpg" alt="" />
+                        </a>
+                        <a data-fancybox="gallery" data-src="../images/servicios navales/img6.jpg">
+                            <img src="../images/servicios navales/img6.jpg" alt="" />
+                        </a>
                     </div>
                 </div>
             </div>
@@ -106,5 +124,12 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+        });  
+        
+    </script>
 </body>
 </html>

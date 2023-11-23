@@ -1,29 +1,25 @@
-
-.servicios-navales{
+.servicios-gruas{
     padding: 20px 0px;
     @include display-flex(column, center,center,nowrap,10px);
     h2{
         @include font-style($title-font,50px,center);
     }
-    .servNavales{
+    .servGruas{
         @include display-flex(row, center,center,nowrap,30px);
         ul{
-            list-style-type: square;
+            list-style-type: none;
             width: 35vw;
             li{
-                @include font-style($text-font,x-large,justify);
+                @include font-style($text-font,xx-large,center);
             }
         }
-        .serNavales-galeria{
+        .serGruas-galeria{
             @include display-flex(column, center,center,nowrap,10px);
             div{
-                
                 img{
                     object-fit: cover;
                     @include width-height(15vw,auto);
-                } 
-            
-                
+                }
             }
         }
     }

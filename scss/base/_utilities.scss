@@ -22,3 +22,10 @@
     font-size: $size;
     text-align: $align;
 };
+
+@mixin text-border-style($backgroundColor,$decoration,$width,$padding){
+    background-color: $backgroundColor;
+    list-style-type: $decoration;
+    width: $width;
+    padding: $padding
+};

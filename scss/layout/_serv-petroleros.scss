@@ -6,19 +6,28 @@
     }
     .servPetroleros{
         @include display-flex(row, center,center,nowrap,30px);
+        
         ul{
-            list-style-type: square;
-            width: 35vw;
+            @include border-style(100px,groove,grey,5px);
+            @include text-border-style(rgb(189, 189, 189),square,40vw,40px);
+            border-top-left-radius: 0px;
+            border-bottom-right-radius: 0px;
             li{
                 @include font-style($text-font,x-large,justify);
             }
         }
         .servPetroleros-galeria{
             @include display-flex(column, center,center,nowrap,10px);
+            @include border-style(50px,double,grey,8px);
+            padding: 40px;
+            background-color: rgba(176, 173, 173, 0.404);
+            
             div{
+                @include display-flex(row,center,center,wrap,10px);
                 img{
                     object-fit: cover;
-                    @include width-height(250px,auto);
+                    border-radius: 50px;
+                    @include width-height(15vw,auto);
                 }
             }
         }

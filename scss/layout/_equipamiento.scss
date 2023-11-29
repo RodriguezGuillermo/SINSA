@@ -18,6 +18,9 @@
         }
         .texto{
             width: 40vw;
+            background-color: rgb(224, 224, 224);
+            @include border-style(100px,groove,grey,5px);
+            padding: 40px;
             h2{
                 @include font-style($title-font,xx-large,center);
             }
@@ -41,10 +44,16 @@
     }
     .equipamiento-galeria{
         @include display-flex(column,center,center,wrap,20px);
+        background-color: rgba(176, 173, 173, 0.404);
+        
+        @include border-style(100px,outset,rgba(7, 0, 197, 0.308),8px);
+        padding: 40px;
         div{
             @include display-flex(row,center,center,wrap,10px);
         img{
             @include width-height(auto,250px);
+            border-radius: 50px;
+            
         }
         }
         

@@ -1,20 +1,29 @@
 .fragata{
     padding-top: 20px;
+    
     @include display-flex(column,center,center,nowrap,10px);
     h2{
         @include font-style($title-font,50px,center);
         text-decoration: underline;
     }
     .fragata-info{
+        
+        @include border-style(75px,groove,black,5px);
         @include display-flex(column,center,center,nowrap,20px);
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        background: linear-gradient(rgb(189, 189, 189),60%, rgb(0, 0, 0));
+        padding: 5px;
         iframe{
-            @include width-height(35vw,600px);
+            @include width-height(35vw, 600px);
+            border-radius: 20px;
         }
         p{
             width: 50vw;
             @include font-style($text-font,x-large,justify);
         }
     }
+    
 }
 .irizar{
     padding: 20px 0px;

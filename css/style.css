@@ -9,37 +9,31 @@
 .generalNavBar {
   padding-bottom: 20px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 5px;
-  width: 70vw;
-  height: auto;
-  border-bottom-left-radius: 100px;
-  border-bottom-right-radius: 100px;
-  background-color: rgb(212, 212, 212);
-  position: relative;
-  left: 15%;
-}
-.generalNavBar .nbDiv1 {
-  padding-top: 15px;
-  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 10px;
+  gap: 250px;
+  width: auto;
+  height: auto;
+  background-color: rgb(212, 212, 212);
+}
+.generalNavBar .nbDiv1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+  flex-wrap: nowrap;
+  gap: 0px;
 }
 .generalNavBar .nbDiv1 h1 {
   font-family: "Poltawski Nowy", serif;
-  font-size: 3.5vw;
+  font-size: 2.5vw;
   text-align: center;
-  box-shadow: 5px 5px 5px rgb(95, 96, 96);
 }
 .generalNavBar .nbDiv1 img {
   width: auto;
-  height: 100px;
+  height: 90px;
 }
 .generalNavBar .nbDiv2 {
   display: flex;
@@ -48,26 +42,29 @@
   align-items: center;
   flex-wrap: nowrap;
   gap: 1.5vw;
+  position: relative;
+  top: 10px;
 }
 .generalNavBar .nbDiv2 .btn {
   border-radius: 15px;
-  border-style: groove;
+  border-style: inset;
   border-color: rgb(167, 167, 167);
   border-width: 3px;
   font-family: "Poltawski Nowy", serif;
   font-size: 1.2vw;
   text-align: center;
-  box-shadow: 5px 5px rgb(95, 96, 96);
   position: relative;
-  transition: all ease-in-out;
+  transition: all ease-in-out 0.1s;
 }
 .generalNavBar .nbDiv2 .btn:hover {
-  top: 5px;
-  left: 5px;
-  box-shadow: none;
+  border-radius: 75px;
+  border-width: 5px;
+  padding: 10px;
 }
 .generalNavBar .nbDiv2 .dropdown-menu {
   background-color: rgb(212, 212, 212);
+  align-items: center;
+  display: column;
 }
 .generalNavBar .nbDiv2 .dropdown-menu .dropdown-item {
   font-family: "Poltawski Nowy", serif;
@@ -88,8 +85,9 @@
   border-top-left-radius: 100px;
   border-top-right-radius: 100px;
   background-color: rgb(212, 212, 212);
-  position: absolute;
+  position: relative;
   left: 30%;
+  bottom: -125px;
 }
 .footer h3 {
   font-family: "Poltawski Nowy", serif;
@@ -263,6 +261,9 @@ body {
   width: 100vw;
   background-color: lightgray;
 }
+.sectionContacto .container .telefonos ul {
+  list-style: none;
+}
 .sectionContacto .container .telefonos ul li {
   font-family: "Poltawski Nowy", serif;
   font-size: 30px;
@@ -411,6 +412,12 @@ body {
 }
 .equipo .info .texto {
   width: 40vw;
+  background-color: rgb(224, 224, 224);
+  border-radius: 100px;
+  border-style: groove;
+  border-color: grey;
+  border-width: 5px;
+  padding: 40px;
 }
 .equipo .info .texto h2 {
   font-family: "Poltawski Nowy", serif;
@@ -452,6 +459,12 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  background-color: rgba(176, 173, 173, 0.404);
+  border-radius: 100px;
+  border-style: outset;
+  border-color: rgba(7, 0, 197, 0.308);
+  border-width: 8px;
+  padding: 40px;
 }
 .equipamiento .equipamiento-galeria div {
   display: flex;
@@ -464,6 +477,7 @@ body {
 .equipamiento .equipamiento-galeria div img {
   width: auto;
   height: 250px;
+  border-radius: 50px;
 }
 
 .servicios-navales {
@@ -489,8 +503,16 @@ body {
   gap: 30px;
 }
 .servicios-navales .servNavales ul {
+  border-radius: 75px;
+  border-style: groove;
+  border-color: grey;
+  border-width: 5px;
+  background-color: rgb(189, 189, 189);
   list-style-type: square;
-  width: 35vw;
+  width: 40vw;
+  padding: 30px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .servicios-navales .servNavales ul li {
   font-family: "Poltawski Nowy", serif;
@@ -504,11 +526,26 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   gap: 10px;
+  border-radius: 50px;
+  border-style: double;
+  border-color: grey;
+  border-width: 8px;
+  padding: 40px;
+  background-color: rgba(176, 173, 173, 0.404);
+}
+.servicios-navales .servNavales .serNavales-galeria div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .servicios-navales .servNavales .serNavales-galeria div img {
   object-fit: cover;
   width: 15vw;
   height: auto;
+  border-radius: 50px;
 }
 
 .servicios-petroleros {
@@ -534,8 +571,16 @@ body {
   gap: 30px;
 }
 .servicios-petroleros .servPetroleros ul {
+  border-radius: 100px;
+  border-style: groove;
+  border-color: grey;
+  border-width: 5px;
+  background-color: rgb(189, 189, 189);
   list-style-type: square;
-  width: 35vw;
+  width: 40vw;
+  padding: 40px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .servicios-petroleros .servPetroleros ul li {
   font-family: "Poltawski Nowy", serif;
@@ -549,10 +594,25 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   gap: 10px;
+  border-radius: 50px;
+  border-style: double;
+  border-color: grey;
+  border-width: 8px;
+  padding: 40px;
+  background-color: rgba(176, 173, 173, 0.404);
+}
+.servicios-petroleros .servPetroleros .servPetroleros-galeria div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .servicios-petroleros .servPetroleros .servPetroleros-galeria div img {
   object-fit: cover;
-  width: 250px;
+  border-radius: 50px;
+  width: 15vw;
   height: auto;
 }
 
@@ -579,12 +639,20 @@ body {
   gap: 30px;
 }
 .servicios-transporte .servTransporte ul {
+  border-radius: 75px;
+  border-style: groove;
+  border-color: grey;
+  border-width: 5px;
+  background-color: rgb(189, 189, 189);
   list-style-type: square;
-  width: 35vw;
+  width: 40vw;
+  padding: 35px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .servicios-transporte .servTransporte ul li {
   font-family: "Poltawski Nowy", serif;
-  font-size: x-large;
+  font-size: xx-large;
   text-align: justify;
 }
 .servicios-transporte .servTransporte .servTransporte-galeria {
@@ -594,11 +662,26 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   gap: 10px;
+  border-radius: 50px;
+  border-style: double;
+  border-color: grey;
+  border-width: 8px;
+  padding: 40px;
+  background-color: rgba(176, 173, 173, 0.404);
+}
+.servicios-transporte .servTransporte .servTransporte-galeria div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .servicios-transporte .servTransporte .servTransporte-galeria div img {
   object-fit: cover;
-  width: 250px;
+  width: 15vw;
   height: auto;
+  border-radius: 50px;
 }
 
 .servicios-gruas {
@@ -624,8 +707,16 @@ body {
   gap: 30px;
 }
 .servicios-gruas .servGruas ul {
+  border-radius: 75px;
+  border-style: groove;
+  border-color: grey;
+  border-width: 5px;
+  background-color: rgb(189, 189, 189);
   list-style-type: none;
-  width: 35vw;
+  width: 40vw;
+  padding: 30px;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .servicios-gruas .servGruas ul li {
   font-family: "Poltawski Nowy", serif;
@@ -639,11 +730,26 @@ body {
   align-items: center;
   flex-wrap: nowrap;
   gap: 10px;
+  border-radius: 50px;
+  border-style: double;
+  border-color: grey;
+  border-width: 8px;
+  padding: 40px;
+  background-color: rgba(176, 173, 173, 0.404);
+}
+.servicios-gruas .servGruas .serGruas-galeria div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 .servicios-gruas .servGruas .serGruas-galeria div img {
   object-fit: cover;
   width: 15vw;
   height: auto;
+  border-radius: 50px;
 }
 
 .fragata {
@@ -662,16 +768,25 @@ body {
   text-decoration: underline;
 }
 .fragata .fragata-info {
+  border-radius: 75px;
+  border-style: groove;
+  border-color: black;
+  border-width: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   gap: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  background: linear-gradient(rgb(189, 189, 189), 60%, rgb(0, 0, 0));
+  padding: 5px;
 }
 .fragata .fragata-info iframe {
   width: 35vw;
   height: 600px;
+  border-radius: 20px;
 }
 .fragata .fragata-info p {
   width: 50vw;

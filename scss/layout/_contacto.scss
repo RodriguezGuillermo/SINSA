@@ -17,6 +17,7 @@
             width: 100vw;
             background-color: lightgray;
             ul{
+                list-style: none;
                 li{
                     @include font-style($text-font,30px,center);
                     border-style: groove;

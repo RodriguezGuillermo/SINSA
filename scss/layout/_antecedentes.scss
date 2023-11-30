@@ -3,7 +3,7 @@
     
     @include display-flex(column,center,center,nowrap,10px);
     h2{
-        @include font-style($title-font,50px,center);
+        @include font-style($title-font,4vw,center);
         text-decoration: underline;
     }
     .fragata-info{
@@ -15,37 +15,44 @@
         background: linear-gradient(rgb(189, 189, 189),60%, rgb(0, 0, 0));
         padding: 5px;
         iframe{
-            @include width-height(35vw, 600px);
+            @include width-height(35vw, 35vw);
             border-radius: 20px;
         }
         p{
-            width: 50vw;
+            width: 60vw;
             @include font-style($text-font,x-large,justify);
         }
     }
     
 }
 .irizar{
-    padding: 20px 0px;
+    
     @include display-flex(column,center,center,nowrap,10px);
     h2{
-        @include font-style($title-font,50px,center);
+        @include font-style($title-font,4vw,center);
         text-decoration: underline;
+        padding: 40px 0px;
     }
     .irizar-info{
+        @include border-style(75px,groove,black,5px);
         @include display-flex(row,center,center,nowrap,20px);
+        padding: 20px;
+        background: linear-gradient(rgb(189, 189, 189),60%, rgb(0, 0, 0));
         .irizar-galeria{
             @include display-flex(column,center,center,wrap,10px);
             div{
                 @include display-flex(row,center,center,wrap,10px);
                 img{
                     @include width-height(12vw,auto);
+                    border-radius: 75px;
                 }
             }
         }
         p{
             width: 50vw;
             @include font-style($text-font,xx-large,justify);
+            color: white;
+            position: relative;
         }
     }
 

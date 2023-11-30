@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 250px;
+  gap: 150px;
   width: auto;
   height: auto;
   background-color: rgb(212, 212, 212);
@@ -763,7 +763,7 @@ body {
 }
 .fragata h2 {
   font-family: "Poltawski Nowy", serif;
-  font-size: 50px;
+  font-size: 4vw;
   text-align: center;
   text-decoration: underline;
 }
@@ -785,18 +785,17 @@ body {
 }
 .fragata .fragata-info iframe {
   width: 35vw;
-  height: 600px;
+  height: 35vw;
   border-radius: 20px;
 }
 .fragata .fragata-info p {
-  width: 50vw;
+  width: 60vw;
   font-family: "Poltawski Nowy", serif;
   font-size: x-large;
   text-align: justify;
 }
 
 .irizar {
-  padding: 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -806,17 +805,24 @@ body {
 }
 .irizar h2 {
   font-family: "Poltawski Nowy", serif;
-  font-size: 50px;
+  font-size: 4vw;
   text-align: center;
   text-decoration: underline;
+  padding: 40px 0px;
 }
 .irizar .irizar-info {
+  border-radius: 75px;
+  border-style: groove;
+  border-color: black;
+  border-width: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   gap: 20px;
+  padding: 20px;
+  background: linear-gradient(rgb(189, 189, 189), 60%, rgb(0, 0, 0));
 }
 .irizar .irizar-info .irizar-galeria {
   display: flex;
@@ -837,12 +843,15 @@ body {
 .irizar .irizar-info .irizar-galeria div img {
   width: 12vw;
   height: auto;
+  border-radius: 75px;
 }
 .irizar .irizar-info p {
   width: 50vw;
   font-family: "Poltawski Nowy", serif;
   font-size: xx-large;
   text-align: justify;
+  color: white;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

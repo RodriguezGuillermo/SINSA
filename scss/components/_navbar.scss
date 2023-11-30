@@ -1,13 +1,12 @@
 .generalNavBar{
     padding-bottom:20px;
-    @include display-flex(row,center,center,nowrap,250px);
+    @include display-flex(row,center,center,nowrap,150px);
     @include width-height (auto, auto);
     
     background-color: rgb(212, 212, 212);
 
     .nbDiv1{
         @include display-flex(row,center,end,nowrap,0px);
-        
         h1{
             @include font-style($text-font,2.5vw,center);
         }

@@ -23,11 +23,11 @@
             background-color: rgba(176, 173, 173, 0.404);
             
             div{
-                @include display-flex(row,center,center,wrap,10px);
+                @include display-flex(row,center,center,nowrap,10px);
                 img{
                     object-fit: cover;
                     border-radius: 50px;
-                    @include width-height(15vw,auto);
+                    @include width-height(220px,auto);
                 }
             }
         }

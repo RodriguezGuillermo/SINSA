@@ -1,6 +1,6 @@
 .generalNavBar{
     padding-bottom:20px;
-    @include display-flex(row,center,center,nowrap,150px);
+    @include display-flex(row,center,center,nowrap,100px);
     @include width-height (auto, auto);
     
     background-color: rgb(212, 212, 212);
@@ -20,7 +20,7 @@
         top: 10px;
         .btn{
             @include border-style(15px, inset, rgb(167, 167, 167),3px);
-            @include font-style($text-font,1.2vw,center);
+            @include font-style($text-font,1.3vw,center);
             position: relative;
             transition: all ease-in-out 0.1s;
 
@@ -35,7 +35,7 @@
             align-items: center;
             display: column;
             .dropdown-item{
-                @include font-style($title-font,1.2vw,center);
+                @include font-style($title-font,1.3vw,center);
             }
         }
 

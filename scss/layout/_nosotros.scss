@@ -5,27 +5,39 @@
     .info1{
         @include display-flex(row, center, center, nowrap, 20px);
         div{
-            width: 50vw;
+            @include border-style(75px,groove,grey,5px);
+            @include text-border-style(rgb(189, 189, 189),none,60vw,30px);
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
             h2{
-                @include font-style($title-font,xx-large,center);
+                @include font-style($title-font,3vw,center);
+                text-decoration: solid;
+            text-decoration-line: underline;
             }
             p{
                 @include font-style($text-font,x-large, justify);
             }
         }
         img{
-            @include width-height(300px,auto);
+            @include width-height(350px,auto);
+            @include border-style(75px,groove,grey,5px);
         }
     }
     .info2{
         @include display-flex(row, center, center, nowrap, 20px);
         img{
-            @include width-height(300px,auto);
+            @include width-height(auto,500px);
+            @include border-style(75px,groove,grey,5px);
         }
         div{
-            width: 50vw;
+            @include border-style(75px,groove,grey,5px);
+            @include text-border-style(rgb(189, 189, 189),none,60vw,30px);
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
             h2{
-                @include font-style($title-font,xx-large,center);
+                @include font-style($title-font,40px,center);
+                text-decoration: solid;
+                text-decoration-line: underline;
             }
             p{
                 @include font-style($text-font,x-large, justify);
@@ -40,6 +52,9 @@
     }
 }
 .clientes{
+    background: linear-gradient(rgb(189, 189, 189),60%, rgb(0, 0, 0));
+    border-radius:150px ;
+    margin: 5px 30px;
     padding: 20px;
     @include display-flex (column, center,center,nowrap,10px);
     h2{

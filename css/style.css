@@ -13,7 +13,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 150px;
+  gap: 100px;
   width: auto;
   height: auto;
   background-color: rgb(212, 212, 212);
@@ -51,7 +51,7 @@
   border-color: rgb(167, 167, 167);
   border-width: 3px;
   font-family: "Poltawski Nowy", serif;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   text-align: center;
   position: relative;
   transition: all ease-in-out 0.1s;
@@ -68,7 +68,7 @@
 }
 .generalNavBar .nbDiv2 .dropdown-menu .dropdown-item {
   font-family: "Poltawski Nowy", serif;
-  font-size: 1.2vw;
+  font-size: 1.3vw;
   text-align: center;
 }
 
@@ -87,7 +87,7 @@
   background-color: rgb(212, 212, 212);
   position: relative;
   left: 30%;
-  bottom: -125px;
+  bottom: -50px;
 }
 .footer h3 {
   font-family: "Poltawski Nowy", serif;
@@ -229,7 +229,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 10px;
+  gap: 20px;
 }
 .sectionContacto h2 {
   font-family: "Poltawski Nowy", serif;
@@ -242,7 +242,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 10px;
+  gap: 40px;
 }
 .sectionContacto .container .direccion {
   display: flex;
@@ -252,23 +252,27 @@ body {
   flex-wrap: nowrap;
   gap: 10px;
 }
-.sectionContacto .container .direccion h2 {
+.sectionContacto .container .direccion h3 {
   font-family: "Poltawski Nowy", serif;
-  font-size: 25px;
+  font-size: 2vw;
   text-align: center;
 }
+.sectionContacto .container .direccion iframe {
+  width: 40vw;
+  height: 27vw;
+}
 .sectionContacto .container .telefonos {
-  width: 100vw;
   background-color: lightgray;
 }
 .sectionContacto .container .telefonos ul {
+  width: 40vw;
+  height: auto;
   list-style: none;
 }
 .sectionContacto .container .telefonos ul li {
   font-family: "Poltawski Nowy", serif;
-  font-size: 30px;
+  font-size: 2.5vw;
   text-align: center;
-  border-style: groove;
   padding: 5px;
 }
 
@@ -290,12 +294,23 @@ body {
   gap: 20px;
 }
 .empresa .info1 div {
-  width: 50vw;
+  border-radius: 75px;
+  border-style: groove;
+  border-color: grey;
+  border-width: 5px;
+  background-color: rgb(189, 189, 189);
+  list-style-type: none;
+  width: 60vw;
+  padding: 30px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .empresa .info1 div h2 {
   font-family: "Poltawski Nowy", serif;
-  font-size: xx-large;
+  font-size: 3vw;
   text-align: center;
+  text-decoration: solid;
+  text-decoration-line: underline;
 }
 .empresa .info1 div p {
   font-family: "Poltawski Nowy", serif;
@@ -303,8 +318,12 @@ body {
   text-align: justify;
 }
 .empresa .info1 img {
-  width: 300px;
+  width: 350px;
   height: auto;
+  border-radius: 75px;
+  border-style: groove;
+  border-color: grey;
+  border-width: 5px;
 }
 .empresa .info2 {
   display: flex;
@@ -315,16 +334,31 @@ body {
   gap: 20px;
 }
 .empresa .info2 img {
-  width: 300px;
-  height: auto;
+  width: auto;
+  height: 500px;
+  border-radius: 75px;
+  border-style: groove;
+  border-color: grey;
+  border-width: 5px;
 }
 .empresa .info2 div {
-  width: 50vw;
+  border-radius: 75px;
+  border-style: groove;
+  border-color: grey;
+  border-width: 5px;
+  background-color: rgb(189, 189, 189);
+  list-style-type: none;
+  width: 60vw;
+  padding: 30px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 .empresa .info2 div h2 {
   font-family: "Poltawski Nowy", serif;
-  font-size: xx-large;
+  font-size: 40px;
   text-align: center;
+  text-decoration: solid;
+  text-decoration-line: underline;
 }
 .empresa .info2 div p {
   font-family: "Poltawski Nowy", serif;
@@ -341,6 +375,9 @@ body {
 }
 
 .clientes {
+  background: linear-gradient(rgb(189, 189, 189), 60%, rgb(0, 0, 0));
+  border-radius: 150px;
+  margin: 5px 30px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -383,11 +420,6 @@ body {
   flex-wrap: nowrap;
   gap: 10px;
 }
-.equipo .titulo h2 {
-  font-family: "Poltawski Nowy", serif;
-  font-size: x-large;
-  text-align: center;
-}
 .equipo .info {
   display: flex;
   flex-direction: row;
@@ -407,22 +439,28 @@ body {
 }
 .equipo .info .imagenes img {
   object-fit: cover;
-  width: 250px;
+  border-radius: 75px;
+  border-style: groove;
+  border-color: grey;
+  border-width: 5px;
+  width: 23vw;
   height: 250px;
 }
 .equipo .info .texto {
   width: 40vw;
-  background-color: rgb(224, 224, 224);
   border-radius: 100px;
   border-style: groove;
   border-color: grey;
   border-width: 5px;
+  background-color: rgb(189, 189, 189);
   padding: 40px;
 }
 .equipo .info .texto h2 {
   font-family: "Poltawski Nowy", serif;
-  font-size: xx-large;
+  font-size: 2.5vw;
   text-align: center;
+  text-decoration: solid;
+  text-decoration-line: underline;
 }
 .equipo .info .texto p {
   font-family: "Poltawski Nowy", serif;
@@ -441,11 +479,19 @@ body {
 }
 .equipamiento .equipamiento-info {
   width: 80vw;
+  border-radius: 100px;
+  border-style: groove;
+  border-color: grey;
+  border-width: 5px;
+  background-color: rgb(189, 189, 189);
+  padding: 30px;
 }
 .equipamiento .equipamiento-info h2 {
   font-family: "Poltawski Nowy", serif;
-  font-size: xx-large;
+  font-size: 2.5vw;
   text-align: center;
+  text-decoration: solid;
+  text-decoration-line: underline;
 }
 .equipamiento .equipamiento-info p {
   font-family: "Poltawski Nowy", serif;
@@ -453,17 +499,17 @@ body {
   text-align: justify;
 }
 .equipamiento .equipamiento-galeria {
+  background: linear-gradient(rgb(189, 189, 189), 60%, rgb(0, 0, 0));
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  background-color: rgba(176, 173, 173, 0.404);
-  border-radius: 100px;
-  border-style: outset;
-  border-color: rgba(7, 0, 197, 0.308);
-  border-width: 8px;
+  border-radius: 75px;
+  border-style: groove;
+  border-color: grey;
+  border-width: 5px;
   padding: 40px;
 }
 .equipamiento .equipamiento-galeria div {
@@ -475,8 +521,8 @@ body {
   gap: 10px;
 }
 .equipamiento .equipamiento-galeria div img {
-  width: auto;
-  height: 250px;
+  width: 28vw;
+  height: auto;
   border-radius: 50px;
 }
 
@@ -606,13 +652,13 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 10px;
 }
 .servicios-petroleros .servPetroleros .servPetroleros-galeria div img {
   object-fit: cover;
   border-radius: 50px;
-  width: 15vw;
+  width: 220px;
   height: auto;
 }
 

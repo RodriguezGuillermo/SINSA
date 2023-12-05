@@ -1,26 +1,29 @@
 .sectionContacto{
     padding: 20px 0px;
     
-    @include display-flex(column, center,center,nowrap,10px);
+    @include display-flex(column, center,center,nowrap,20px);
     h2{
         @include font-style($title-font,40px,center);
     }
     .container{
-        @include display-flex(row, center,center,nowrap,10px);
+        @include display-flex(row, center,center,nowrap,40px);
         .direccion{
             @include display-flex(column, center,center,nowrap,10px);
-            h2{
-                @include font-style($title-font,25px,center);
+            h3{
+                @include font-style($title-font,2vw,center);
+            }
+            iframe{
+                @include width-height(40vw,27vw);
             }
         }
         .telefonos{
-            width: 100vw;
+            
             background-color: lightgray;
             ul{
+                @include width-height(40vw,auto);
                 list-style: none;
                 li{
-                    @include font-style($text-font,30px,center);
-                    border-style: groove;
+                    @include font-style($text-font,2.5vw,center);
                     padding: 5px;
 
                 }

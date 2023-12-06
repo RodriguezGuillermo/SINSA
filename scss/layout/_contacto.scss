@@ -3,29 +3,33 @@
     
     @include display-flex(column, center,center,nowrap,20px);
     h2{
-        @include font-style($title-font,40px,center);
+        @include font-style($title-font,50px,center);
+        text-decoration: underline;
+
     }
     .container{
-        @include display-flex(row, center,center,nowrap,40px);
+        @include display-flex(row, center,center,nowrap,2vw);
         .direccion{
+            background-color: lightgray;
+            padding: 30px;
+            border-radius: 75px;
             @include display-flex(column, center,center,nowrap,10px);
             h3{
-                @include font-style($title-font,2vw,center);
+                @include font-style($title-font,1.8vw,center);
             }
             iframe{
                 @include width-height(40vw,27vw);
             }
         }
         .telefonos{
-            
             background-color: lightgray;
+            border-radius: 75px;
             ul{
-                @include width-height(40vw,auto);
+                @include width-height(35vw,31vw);
                 list-style: none;
                 li{
-                    @include font-style($text-font,2.5vw,center);
+                    @include font-style($text-font,2.2vw,center);
                     padding: 5px;
-
                 }
             }
         }

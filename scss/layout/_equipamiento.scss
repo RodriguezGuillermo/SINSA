@@ -9,7 +9,7 @@
             img{
                 object-fit: cover;
                 @include border-style(75px,groove,grey,5px);
-                @include width-height(23vw,250px);
+                @include width-height(23vw,15vw);
             }
         }
         .texto{
@@ -23,7 +23,7 @@
                 text-decoration-line: underline;
             }
             p{
-                @include font-style($text-font,x-large,justify);
+                @include font-style($text-font,1.5vw,justify);
             }
         }
     }
@@ -35,14 +35,14 @@
         width: 80vw;
         @include border-style(100px,groove,grey,5px);
             background-color: rgb(189, 189, 189);
-        padding: 30px;
+            padding: 30px;
         h2{
             @include font-style($title-font,2.5vw,center);
             text-decoration: solid;
             text-decoration-line: underline;
         }
         p{
-            @include font-style($text-font, x-large,justify)
+            @include font-style($text-font, 1.5vw,justify)
         }
     }
     .equipamiento-galeria{
@@ -52,11 +52,11 @@
         padding: 40px;
         div{
             @include display-flex(row,center,center,wrap,10px);
-        img{
-            @include width-height(28vw,auto);
-            border-radius: 50px;
-            
-        }
+            img{
+                @include width-height(25vw,15vw);
+                border-radius: 50px;
+                
+            }
         }
         
     }

@@ -81,13 +81,12 @@
   gap: 5px;
   width: 40vw;
   height: auto;
-  border-top-left-radius: 100px;
-  border-top-right-radius: 100px;
+  border-radius: 100px;
   background-color: rgb(212, 212, 212);
   padding: 10px 0px;
+  margin: 20px 0px;
   left: 30%;
   position: relative;
-  bottom: -6vh;
 }
 .footer h3 {
   font-family: "Poltawski Nowy", serif;
@@ -319,11 +318,11 @@ body {
 }
 .empresa .info1 div p {
   font-family: "Poltawski Nowy", serif;
-  font-size: x-large;
+  font-size: 1.5vw;
   text-align: justify;
 }
 .empresa .info1 img {
-  width: 350px;
+  width: 22vw;
   height: auto;
   border-radius: 75px;
   border-style: groove;
@@ -339,8 +338,8 @@ body {
   gap: 20px;
 }
 .empresa .info2 img {
-  width: auto;
-  height: 500px;
+  width: 30vw;
+  height: auto;
   border-radius: 75px;
   border-style: groove;
   border-color: grey;
@@ -355,19 +354,21 @@ body {
   list-style-type: none;
   width: 60vw;
   padding: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
 .empresa .info2 div h2 {
   font-family: "Poltawski Nowy", serif;
-  font-size: 40px;
+  font-size: 3vw;
   text-align: center;
   text-decoration: solid;
   text-decoration-line: underline;
 }
 .empresa .info2 div p {
   font-family: "Poltawski Nowy", serif;
-  font-size: x-large;
+  font-size: 1.5vw;
   text-align: justify;
 }
 .empresa .info2 div ul {
@@ -375,7 +376,7 @@ body {
 }
 .empresa .info2 div ul li {
   font-family: "Poltawski Nowy", serif;
-  font-size: x-large;
+  font-size: 1.5vw;
   text-align: justify;
 }
 
@@ -405,14 +406,14 @@ body {
   gap: 10vw;
 }
 .clientes .carousels .carousel .carousel-inner {
-  width: 300px;
-  height: 400px;
+  width: 20vw;
+  height: 20vw;
   display: flex;
   align-items: center;
 }
 .clientes .carousels .carousel .carousel-inner .carousel-item img {
   object-fit: contain;
-  width: 100%;
+  width: 20vw;
   height: auto;
 }
 
@@ -449,7 +450,7 @@ body {
   border-color: grey;
   border-width: 5px;
   width: 23vw;
-  height: 250px;
+  height: 15vw;
 }
 .equipo .info .texto {
   width: 40vw;
@@ -469,7 +470,7 @@ body {
 }
 .equipo .info .texto p {
   font-family: "Poltawski Nowy", serif;
-  font-size: x-large;
+  font-size: 1.5vw;
   text-align: justify;
 }
 
@@ -500,7 +501,7 @@ body {
 }
 .equipamiento .equipamiento-info p {
   font-family: "Poltawski Nowy", serif;
-  font-size: x-large;
+  font-size: 1.5vw;
   text-align: justify;
 }
 .equipamiento .equipamiento-galeria {
@@ -526,8 +527,8 @@ body {
   gap: 10px;
 }
 .equipamiento .equipamiento-galeria div img {
-  width: 28vw;
-  height: auto;
+  width: 25vw;
+  height: 15vw;
   border-radius: 50px;
 }
 
@@ -542,7 +543,7 @@ body {
 }
 .servicios-navales h2 {
   font-family: "Poltawski Nowy", serif;
-  font-size: 50px;
+  font-size: 3vw;
   text-align: center;
 }
 .servicios-navales .servNavales {
@@ -567,7 +568,7 @@ body {
 }
 .servicios-navales .servNavales ul li {
   font-family: "Poltawski Nowy", serif;
-  font-size: x-large;
+  font-size: 1.5vw;
   text-align: justify;
 }
 .servicios-navales .servNavales .serNavales-galeria {
@@ -610,7 +611,7 @@ body {
 }
 .servicios-petroleros h2 {
   font-family: "Poltawski Nowy", serif;
-  font-size: 50px;
+  font-size: 3vw;
   text-align: center;
 }
 .servicios-petroleros .servPetroleros {
@@ -635,7 +636,7 @@ body {
 }
 .servicios-petroleros .servPetroleros ul li {
   font-family: "Poltawski Nowy", serif;
-  font-size: x-large;
+  font-size: 1.7vw;
   text-align: justify;
 }
 .servicios-petroleros .servPetroleros .servPetroleros-galeria {
@@ -663,7 +664,7 @@ body {
 .servicios-petroleros .servPetroleros .servPetroleros-galeria div img {
   object-fit: cover;
   border-radius: 50px;
-  width: 220px;
+  width: 13vw;
   height: auto;
 }
 
@@ -678,7 +679,7 @@ body {
 }
 .servicios-transporte h2 {
   font-family: "Poltawski Nowy", serif;
-  font-size: 50px;
+  font-size: 4vw;
   text-align: center;
 }
 .servicios-transporte .servTransporte {
@@ -703,7 +704,7 @@ body {
 }
 .servicios-transporte .servTransporte ul li {
   font-family: "Poltawski Nowy", serif;
-  font-size: xx-large;
+  font-size: 1.8vw;
   text-align: justify;
 }
 .servicios-transporte .servTransporte .servTransporte-galeria {
@@ -730,7 +731,7 @@ body {
 }
 .servicios-transporte .servTransporte .servTransporte-galeria div img {
   object-fit: cover;
-  width: 15vw;
+  width: 10vw;
   height: auto;
   border-radius: 50px;
 }
@@ -746,7 +747,7 @@ body {
 }
 .servicios-gruas h2 {
   font-family: "Poltawski Nowy", serif;
-  font-size: 50px;
+  font-size: 4vw;
   text-align: center;
 }
 .servicios-gruas .servGruas {
@@ -798,7 +799,7 @@ body {
 }
 .servicios-gruas .servGruas .serGruas-galeria div img {
   object-fit: cover;
-  width: 15vw;
+  width: 10vw;
   height: auto;
   border-radius: 50px;
 }
@@ -860,6 +861,7 @@ body {
   text-align: center;
   text-decoration: underline;
   padding: 40px 0px;
+  margin: 0px;
 }
 .irizar .irizar-info {
   border-radius: 75px;
@@ -899,10 +901,54 @@ body {
 .irizar .irizar-info p {
   width: 50vw;
   font-family: "Poltawski Nowy", serif;
-  font-size: xx-large;
+  font-size: 2.7vw;
   text-align: justify;
   color: white;
   position: relative;
+}
+
+@media only screen and (max-width: 1399.99px) {
+  .generalNavBar {
+    padding-bottom: 10px;
+    gap: 4vw;
+  }
+  .generalNavBar .nbDiv1 h1 {
+    position: relative;
+    top: -10px;
+    font-size: 2.6vw;
+  }
+  .generalNavBar .nbDiv2 {
+    gap: 1.3vw;
+  }
+  .generalNavBar .nbDiv2 .btn {
+    font-size: 1.3vw;
+    position: relative;
+  }
+  .footer h3 {
+    font-size: 2vw;
+  }
+  .antecedentesMain .fragata-info iframe {
+    width: 40vw;
+    height: 40vw;
+  }
+  .servicios-navales .servNavales ul li {
+    font-size: 1.7vw;
+  }
+  .servicios-navales .servNavales .serNavales-galeria {
+    flex-direction: row;
+    padding: 20px;
+  }
+  .servicios-navales .servNavales .serNavales-galeria div {
+    flex-direction: column;
+  }
+  .servicios-navales .servNavales .serNavales-galeria div img {
+    width: 16vw;
+    height: auto;
+  }
+  .servicios-petroleros .servPetroleros .servPetroleros-galeria div img {
+    width: 15vw;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

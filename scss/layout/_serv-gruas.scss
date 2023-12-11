@@ -2,7 +2,7 @@
     padding: 20px 0px;
     @include display-flex(column, center,center,nowrap,10px);
     h2{
-        @include font-style($title-font,50px,center);
+        @include font-style($title-font,4vw,center);
     }
     .servGruas{
         @include display-flex(row, center,center,nowrap,30px);
@@ -24,7 +24,7 @@
                 @include display-flex(row,center,center,wrap,10px);
                 img{
                     object-fit: cover;
-                    @include width-height(15vw,auto);
+                    @include width-height(10vw,auto);
                     border-radius: 50px;
                 }
             }

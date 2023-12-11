@@ -15,37 +15,39 @@
             text-decoration-line: underline;
             }
             p{
-                @include font-style($text-font,x-large, justify);
+                @include font-style($text-font,1.5vw, justify);
             }
         }
         img{
-            @include width-height(350px,auto);
+            @include width-height(22vw,auto);
             @include border-style(75px,groove,grey,5px);
         }
     }
     .info2{
         @include display-flex(row, center, center, nowrap, 20px);
         img{
-            @include width-height(auto,500px);
+            @include width-height(30vw,auto);
             @include border-style(75px,groove,grey,5px);
         }
         div{
             @include border-style(75px,groove,grey,5px);
             @include text-border-style(rgb(189, 189, 189),none,60vw,30px);
+            padding-bottom: 5px;
+            padding-top: 5px;
             border-top-left-radius: 0px;
             border-bottom-left-radius: 0px;
             h2{
-                @include font-style($title-font,40px,center);
+                @include font-style($title-font,3vw,center);
                 text-decoration: solid;
                 text-decoration-line: underline;
             }
             p{
-                @include font-style($text-font,x-large, justify);
+                @include font-style($text-font,1.5vw, justify);
             }
             ul{
                 list-style: circle;
                 li{
-                    @include font-style($text-font,x-large, justify);
+                    @include font-style($text-font,1.5vw, justify);
                 }
             }
         }
@@ -64,13 +66,13 @@
         @include display-flex (row, center,center,wrap,10vw);
         .carousel{
             .carousel-inner{
-                @include width-height(300px,400px);
+                @include width-height(20vw,20vw);
                 display: flex;
                 align-items: center;
                 .carousel-item{
                     img{
                         object-fit: contain;
-                        @include width-height(100%,auto);
+                        @include width-height(20vw,auto);
                     }
                 }
             }

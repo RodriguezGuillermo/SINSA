@@ -2,14 +2,13 @@
     
     @include display-flex(column,center,center,nowrap, 5px);
     @include width-height (40vw, auto);
-    border-top-left-radius: 100px ;
-    border-top-right-radius: 100px ;
+    border-radius:100px ;
     background-color: rgb(212, 212, 212);
     
     padding: 10px 0px;
+    margin:20px 0px;
     left: 30%;
     position: relative;
-    bottom: -6vh;
     h3{
         font-family: $title-font;
     }

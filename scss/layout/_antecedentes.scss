@@ -32,6 +32,7 @@
         @include font-style($title-font,4vw,center);
         text-decoration: underline;
         padding: 40px 0px;
+        margin:0px;
     }
     .irizar-info{
         @include border-style(75px,groove,black,5px);
@@ -50,7 +51,7 @@
         }
         p{
             width: 50vw;
-            @include font-style($text-font,xx-large,justify);
+            @include font-style($text-font,2.7vw,justify);
             color: white;
             position: relative;
         }

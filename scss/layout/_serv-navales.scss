@@ -3,7 +3,7 @@
     padding: 20px 0px;
     @include display-flex(column, center,center,nowrap,10px);
     h2{
-        @include font-style($title-font,50px,center);
+        @include font-style($title-font,3vw,center);
     }
     .servNavales{
         @include display-flex(row, center,center,nowrap,30px);
@@ -13,7 +13,7 @@
             border-top-left-radius: 0px;
             border-bottom-right-radius: 0px;
             li{
-                @include font-style($text-font,x-large,justify);
+                @include font-style($text-font,1.5vw,justify);
             }
         }
         .serNavales-galeria{

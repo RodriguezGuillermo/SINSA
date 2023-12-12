@@ -1,25 +1,34 @@
 .generalNavBar{
+    border-bottom: 4px solid black;
     padding-bottom:20px;
-    @include display-flex(row,center,center,nowrap,100px);
+    @include display-flex(row,center,center,nowrap,20vw);
     @include width-height (auto, auto);
-    
     background-color: rgb(212, 212, 212);
 
     .nbDiv1{
         @include display-flex(row,center,end,nowrap,0px);
+        
+        
         h1{
-            @include font-style($text-font,2.5vw,center);
+            @include font-style($title-font,2vw,center);
+            position: relative;
+            top:-5px;
         }
         img{
             @include width-height (auto, 90px);
+            position: relative;
+            top:5px;
         }
     }
     .nbDiv2{
         @include display-flex(row,center,center,nowrap,1.5vw);
-        position: relative;
-        top: 10px;
+
         .btn{
+            position: relative;
+            top:5px;
             @include border-style(15px, inset, rgb(167, 167, 167),3px);
+            border-width: 0px;
+            border-bottom: 1px;
             @include font-style($text-font,1.3vw,center);
             position: relative;
             transition: all ease-in-out 0.1s;
@@ -31,6 +40,7 @@
             }
         }
         .dropdown-menu{ 
+            z-index: 1;
             background-color:  rgb(212, 212, 212);
             align-items: center;
             display: column;

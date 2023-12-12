@@ -2,13 +2,18 @@
     padding: 20px 0px;
     @include display-flex(column, center,center,nowrap,10px);
     h2{
-        @include font-style($title-font,4vw,center);
+        @include font-style($title-font,3.5vw,center);
+        background: rgba(255, 255, 255, 0.435);
+        border-radius: 100px;
+        padding: 10px;
+        z-index: -1;
     }
     .servTransporte{
         @include display-flex(row, center,center,nowrap,30px);
         ul{
-            @include border-style(75px,groove,grey,5px);
+            //@include border-style(75px,groove,grey,5px);
             @include text-border-style(rgb(189, 189, 189),square,40vw,35px);
+            background-color: transparent;
             border-top-left-radius: 0px;
             border-bottom-right-radius: 0px;
             li{
@@ -20,6 +25,7 @@
             @include border-style(50px,double,grey,8px);
             padding: 40px;
             background-color: rgba(176, 173, 173, 0.404);
+            z-index: -1;
             div{
                 @include display-flex(row,center,center,wrap,10px);
                 img{

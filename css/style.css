@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poltawski+Nowy&family=Roboto+Slab:wght@200;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poltawski+Nowy&family=Roboto+Slab:wght@200;300&family=Ubuntu:ital,wght@1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Poltawski+Nowy&family=Roboto+Slab:wght@200;300&family=Ubuntu:ital,wght@1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,13 +8,14 @@
 }
 
 .generalNavBar {
+  border-bottom: 4px solid black;
   padding-bottom: 20px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 100px;
+  gap: 20vw;
   width: auto;
   height: auto;
   background-color: rgb(212, 212, 212);
@@ -28,12 +30,16 @@
 }
 .generalNavBar .nbDiv1 h1 {
   font-family: "Poltawski Nowy", serif;
-  font-size: 2.5vw;
+  font-size: 2vw;
   text-align: center;
+  position: relative;
+  top: -5px;
 }
 .generalNavBar .nbDiv1 img {
   width: auto;
   height: 90px;
+  position: relative;
+  top: 5px;
 }
 .generalNavBar .nbDiv2 {
   display: flex;
@@ -42,15 +48,17 @@
   align-items: center;
   flex-wrap: nowrap;
   gap: 1.5vw;
-  position: relative;
-  top: 10px;
 }
 .generalNavBar .nbDiv2 .btn {
+  position: relative;
+  top: 5px;
   border-radius: 15px;
   border-style: inset;
   border-color: rgb(167, 167, 167);
   border-width: 3px;
-  font-family: "Poltawski Nowy", serif;
+  border-width: 0px;
+  border-bottom: 1px;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.3vw;
   text-align: center;
   position: relative;
@@ -62,6 +70,7 @@
   padding: 10px;
 }
 .generalNavBar .nbDiv2 .dropdown-menu {
+  z-index: 1;
   background-color: rgb(212, 212, 212);
   align-items: center;
   display: column;
@@ -175,6 +184,7 @@ body {
 }
 
 .sectionIndex {
+  z-index: -1;
   padding: 20px 50px;
   display: flex;
   flex-direction: column;
@@ -187,6 +197,9 @@ body {
   font-family: "Poltawski Nowy", serif;
   font-size: 50px;
   text-align: center;
+  background: rgba(255, 255, 255, 0.435);
+  border-radius: 100px;
+  padding: 10px;
 }
 .sectionIndex .servicios {
   display: flex;
@@ -197,6 +210,7 @@ body {
   gap: 15px;
 }
 .sectionIndex .servicios .card {
+  z-index: -1;
   background-color: rgba(255, 255, 255, 0.435);
   overflow: hidden;
   border-radius: 20px;
@@ -231,12 +245,16 @@ body {
   gap: 20px;
 }
 .sectionContacto h2 {
+  z-index: -1;
   font-family: "Poltawski Nowy", serif;
   font-size: 50px;
   text-align: center;
-  text-decoration: underline;
+  background: rgba(255, 255, 255, 0.435);
+  border-radius: 100px;
+  padding: 10px;
 }
 .sectionContacto .container {
+  z-index: -1;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -274,7 +292,7 @@ body {
   list-style: none;
 }
 .sectionContacto .container .telefonos ul li {
-  font-family: "Poltawski Nowy", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 2.2vw;
   text-align: center;
   padding: 5px;
@@ -298,6 +316,7 @@ body {
   gap: 20px;
 }
 .empresa .info1 div {
+  z-index: -1;
   border-radius: 75px;
   border-style: groove;
   border-color: grey;
@@ -317,11 +336,12 @@ body {
   text-decoration-line: underline;
 }
 .empresa .info1 div p {
-  font-family: "Poltawski Nowy", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.5vw;
   text-align: justify;
 }
 .empresa .info1 img {
+  z-index: -1;
   width: 22vw;
   height: auto;
   border-radius: 75px;
@@ -367,7 +387,7 @@ body {
   text-decoration-line: underline;
 }
 .empresa .info2 div p {
-  font-family: "Poltawski Nowy", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.5vw;
   text-align: justify;
 }
@@ -375,7 +395,7 @@ body {
   list-style: circle;
 }
 .empresa .info2 div ul li {
-  font-family: "Poltawski Nowy", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.5vw;
   text-align: justify;
 }
@@ -393,7 +413,7 @@ body {
   gap: 10px;
 }
 .clientes h2 {
-  font-family: "Poltawski Nowy", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 60px;
   text-align: center;
 }
@@ -444,6 +464,7 @@ body {
   gap: 10px;
 }
 .equipo .info .imagenes img {
+  z-index: -1;
   object-fit: cover;
   border-radius: 75px;
   border-style: groove;
@@ -453,6 +474,7 @@ body {
   height: 15vw;
 }
 .equipo .info .texto {
+  z-index: -1;
   width: 40vw;
   border-radius: 100px;
   border-style: groove;
@@ -469,7 +491,7 @@ body {
   text-decoration-line: underline;
 }
 .equipo .info .texto p {
-  font-family: "Poltawski Nowy", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.5vw;
   text-align: justify;
 }
@@ -481,7 +503,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 5px;
+  gap: 0px;
 }
 .equipamiento .equipamiento-info {
   width: 80vw;
@@ -489,8 +511,10 @@ body {
   border-style: groove;
   border-color: grey;
   border-width: 5px;
-  background-color: rgb(189, 189, 189);
-  padding: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background: linear-gradient(rgba(255, 255, 255, 0.435), 30%, rgb(189, 189, 189));
+  padding: 30px 30px 0px 30px;
 }
 .equipamiento .equipamiento-info h2 {
   font-family: "Poltawski Nowy", serif;
@@ -500,12 +524,12 @@ body {
   text-decoration-line: underline;
 }
 .equipamiento .equipamiento-info p {
-  font-family: "Poltawski Nowy", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.5vw;
   text-align: justify;
 }
 .equipamiento .equipamiento-galeria {
-  background: linear-gradient(rgb(189, 189, 189), 60%, rgb(0, 0, 0));
+  background: linear-gradient(rgb(189, 189, 189), 40%, rgba(255, 255, 255, 0.435));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -516,7 +540,9 @@ body {
   border-style: groove;
   border-color: grey;
   border-width: 5px;
-  padding: 40px;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  padding: 30px;
 }
 .equipamiento .equipamiento-galeria div {
   display: flex;
@@ -545,6 +571,10 @@ body {
   font-family: "Poltawski Nowy", serif;
   font-size: 3vw;
   text-align: center;
+  background: rgba(255, 255, 255, 0.435);
+  border-radius: 100px;
+  padding: 10px;
+  z-index: -1;
 }
 .servicios-navales .servNavales {
   display: flex;
@@ -555,19 +585,16 @@ body {
   gap: 30px;
 }
 .servicios-navales .servNavales ul {
-  border-radius: 75px;
-  border-style: groove;
-  border-color: grey;
-  border-width: 5px;
   background-color: rgb(189, 189, 189);
   list-style-type: square;
   width: 40vw;
   padding: 30px;
+  background-color: transparent;
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 .servicios-navales .servNavales ul li {
-  font-family: "Poltawski Nowy", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.5vw;
   text-align: justify;
 }
@@ -584,6 +611,7 @@ body {
   border-width: 8px;
   padding: 40px;
   background-color: rgba(176, 173, 173, 0.404);
+  z-index: -1;
 }
 .servicios-navales .servNavales .serNavales-galeria div {
   display: flex;
@@ -613,6 +641,9 @@ body {
   font-family: "Poltawski Nowy", serif;
   font-size: 3vw;
   text-align: center;
+  background: rgba(255, 255, 255, 0.435);
+  border-radius: 100px;
+  padding: 10px;
 }
 .servicios-petroleros .servPetroleros {
   display: flex;
@@ -623,19 +654,16 @@ body {
   gap: 30px;
 }
 .servicios-petroleros .servPetroleros ul {
-  border-radius: 100px;
-  border-style: groove;
-  border-color: grey;
-  border-width: 5px;
   background-color: rgb(189, 189, 189);
   list-style-type: square;
   width: 40vw;
   padding: 40px;
+  background-color: transparent;
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 .servicios-petroleros .servPetroleros ul li {
-  font-family: "Poltawski Nowy", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.7vw;
   text-align: justify;
 }
@@ -679,8 +707,12 @@ body {
 }
 .servicios-transporte h2 {
   font-family: "Poltawski Nowy", serif;
-  font-size: 4vw;
+  font-size: 3.5vw;
   text-align: center;
+  background: rgba(255, 255, 255, 0.435);
+  border-radius: 100px;
+  padding: 10px;
+  z-index: -1;
 }
 .servicios-transporte .servTransporte {
   display: flex;
@@ -691,19 +723,16 @@ body {
   gap: 30px;
 }
 .servicios-transporte .servTransporte ul {
-  border-radius: 75px;
-  border-style: groove;
-  border-color: grey;
-  border-width: 5px;
   background-color: rgb(189, 189, 189);
   list-style-type: square;
   width: 40vw;
   padding: 35px;
+  background-color: transparent;
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 .servicios-transporte .servTransporte ul li {
-  font-family: "Poltawski Nowy", serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 1.8vw;
   text-align: justify;
 }
@@ -720,6 +749,7 @@ body {
   border-width: 8px;
   padding: 40px;
   background-color: rgba(176, 173, 173, 0.404);
+  z-index: -1;
 }
 .servicios-transporte .servTransporte .servTransporte-galeria div {
   display: flex;
@@ -749,6 +779,10 @@ body {
   font-family: "Poltawski Nowy", serif;
   font-size: 4vw;
   text-align: center;
+  background: rgba(255, 255, 255, 0.435);
+  border-radius: 100px;
+  padding: 10px;
+  z-index: -1;
 }
 .servicios-gruas .servGruas {
   display: flex;
@@ -759,20 +793,17 @@ body {
   gap: 30px;
 }
 .servicios-gruas .servGruas ul {
-  border-radius: 75px;
-  border-style: groove;
-  border-color: grey;
-  border-width: 5px;
   background-color: rgb(189, 189, 189);
   list-style-type: none;
   width: 40vw;
   padding: 30px;
+  background-color: transparent;
   border-top-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
 .servicios-gruas .servGruas ul li {
-  font-family: "Poltawski Nowy", serif;
-  font-size: xx-large;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3vw;
   text-align: center;
 }
 .servicios-gruas .servGruas .serGruas-galeria {
@@ -788,6 +819,7 @@ body {
   border-width: 8px;
   padding: 40px;
   background-color: rgba(176, 173, 173, 0.404);
+  z-index: -1;
 }
 .servicios-gruas .servGruas .serGruas-galeria div {
   display: flex;
@@ -818,8 +850,10 @@ body {
   font-size: 4vw;
   text-align: center;
   text-decoration: underline;
+  z-index: -1;
 }
 .fragata .fragata-info {
+  z-index: -1;
   border-radius: 75px;
   border-style: groove;
   border-color: black;
@@ -832,7 +866,7 @@ body {
   gap: 20px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
-  background: linear-gradient(rgb(189, 189, 189), 60%, rgb(0, 0, 0));
+  background: linear-gradient(rgb(189, 189, 189), 60%, rgba(255, 255, 255, 0.435));
   padding: 5px;
 }
 .fragata .fragata-info iframe {
@@ -843,7 +877,7 @@ body {
 .fragata .fragata-info p {
   width: 60vw;
   font-family: "Poltawski Nowy", serif;
-  font-size: x-large;
+  font-size: 2vw;
   text-align: justify;
 }
 
@@ -873,9 +907,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 20px;
+  gap: 50px;
   padding: 20px;
-  background: linear-gradient(rgb(189, 189, 189), 60%, rgb(0, 0, 0));
+  background: linear-gradient(rgb(189, 189, 189), 60%, rgba(255, 255, 255, 0.435));
 }
 .irizar .irizar-info .irizar-galeria {
   display: flex;
@@ -895,27 +929,26 @@ body {
 }
 .irizar .irizar-info .irizar-galeria div img {
   width: 12vw;
-  height: auto;
+  height: 12vw;
+  object-fit: cover;
   border-radius: 75px;
 }
 .irizar .irizar-info p {
-  width: 50vw;
+  width: 30vw;
   font-family: "Poltawski Nowy", serif;
-  font-size: 2.7vw;
+  font-size: 2.3vw;
   text-align: justify;
-  color: white;
+  color: black;
   position: relative;
 }
 
 @media only screen and (max-width: 1399.99px) {
   .generalNavBar {
     padding-bottom: 10px;
-    gap: 4vw;
   }
   .generalNavBar .nbDiv1 h1 {
     position: relative;
     top: -10px;
-    font-size: 2.6vw;
   }
   .generalNavBar .nbDiv2 {
     gap: 1.3vw;

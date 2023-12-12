@@ -3,13 +3,17 @@
     @include display-flex(column, center,center,nowrap,10px);
     h2{
         @include font-style($title-font,3vw,center);
+        background: rgba(255, 255, 255, 0.435);
+        border-radius: 100px;
+        padding: 10px;
     }
     .servPetroleros{
         @include display-flex(row, center,center,nowrap,30px);
         
         ul{
-            @include border-style(100px,groove,grey,5px);
+            //@include border-style(100px,groove,grey,5px);
             @include text-border-style(rgb(189, 189, 189),square,40vw,40px);
+            background-color: transparent;
             border-top-left-radius: 0px;
             border-bottom-right-radius: 0px;
             li{

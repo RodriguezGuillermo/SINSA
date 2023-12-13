@@ -4,7 +4,7 @@
     @include display-flex(row,center,center,nowrap,20vw);
     @include width-height (auto, auto);
     background-color: rgb(212, 212, 212);
-
+    
     .nbDiv1{
         @include display-flex(row,center,end,nowrap,0px);
         
@@ -22,7 +22,7 @@
     }
     .nbDiv2{
         @include display-flex(row,center,center,nowrap,1.5vw);
-
+        z-index: 1000;
         .btn{
             position: relative;
             top:5px;

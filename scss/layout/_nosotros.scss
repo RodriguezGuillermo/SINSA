@@ -20,7 +20,6 @@
             }
         }
         img{
-            z-index: -1;;
             @include width-height(22vw,auto);
             @include border-style(75px,groove,grey,5px);
         }

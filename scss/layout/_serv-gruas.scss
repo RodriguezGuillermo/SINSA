@@ -6,7 +6,6 @@
         background: rgba(255, 255, 255, 0.435);
         border-radius: 100px;
         padding: 10px;
-        z-index: -1;
     }
     .servGruas{
         @include display-flex(row, center,center,nowrap,30px);
@@ -17,7 +16,7 @@
             border-top-left-radius: 0px;
             border-bottom-right-radius: 0px;
             li{
-                @include font-style($text-font,3vw,center);
+                @include font-style($text-font,3vw,justify);
             }
         }
         .serGruas-galeria{
@@ -25,12 +24,11 @@
             @include border-style(50px,double,grey,8px);
             padding: 40px;
             background-color: rgba(176, 173, 173, 0.404);
-            z-index: -1;
             div{
                 @include display-flex(row,center,center,wrap,10px);
                 img{
                     object-fit: cover;
-                    @include width-height(10vw,auto);
+                    @include width-height(15vw,15vw);
                     border-radius: 50px;
                 }
             }

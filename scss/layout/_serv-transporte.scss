@@ -25,12 +25,12 @@
             @include border-style(50px,double,grey,8px);
             padding: 40px;
             background-color: rgba(176, 173, 173, 0.404);
-            z-index: -1;
+            
             div{
                 @include display-flex(row,center,center,wrap,10px);
                 img{
                     object-fit: cover;
-                    @include width-height(10vw,auto);
+                    @include width-height(15vw,15vw);
                     border-radius: 50px;
                 }
             }

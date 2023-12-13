@@ -8,7 +8,6 @@
         z-index: -1;
     }
     .fragata-info{
-        z-index: -1;
         @include border-style(75px,groove,black,5px);
         @include display-flex(column,center,center,nowrap,20px);
         border-top-left-radius: 0px;

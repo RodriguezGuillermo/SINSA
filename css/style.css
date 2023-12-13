@@ -48,6 +48,7 @@
   align-items: center;
   flex-wrap: nowrap;
   gap: 1.5vw;
+  z-index: 1000;
 }
 .generalNavBar .nbDiv2 .btn {
   position: relative;
@@ -210,14 +211,13 @@ body {
   gap: 15px;
 }
 .sectionIndex .servicios .card {
-  z-index: -1;
   background-color: rgba(255, 255, 255, 0.435);
   overflow: hidden;
   border-radius: 20px;
 }
 .sectionIndex .servicios .card img {
-  width: 400px;
-  height: 350px;
+  width: 23vw;
+  height: 23vw;
   border-radius: 20px;
   object-fit: cover;
   filter: grayscale(90%);
@@ -254,7 +254,6 @@ body {
   padding: 10px;
 }
 .sectionContacto .container {
-  z-index: -1;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -341,7 +340,6 @@ body {
   text-align: justify;
 }
 .empresa .info1 img {
-  z-index: -1;
   width: 22vw;
   height: auto;
   border-radius: 75px;
@@ -574,7 +572,6 @@ body {
   background: rgba(255, 255, 255, 0.435);
   border-radius: 100px;
   padding: 10px;
-  z-index: -1;
 }
 .servicios-navales .servNavales {
   display: flex;
@@ -611,7 +608,6 @@ body {
   border-width: 8px;
   padding: 40px;
   background-color: rgba(176, 173, 173, 0.404);
-  z-index: -1;
 }
 .servicios-navales .servNavales .serNavales-galeria div {
   display: flex;
@@ -624,7 +620,7 @@ body {
 .servicios-navales .servNavales .serNavales-galeria div img {
   object-fit: cover;
   width: 15vw;
-  height: auto;
+  height: 15vw;
   border-radius: 50px;
 }
 
@@ -749,7 +745,6 @@ body {
   border-width: 8px;
   padding: 40px;
   background-color: rgba(176, 173, 173, 0.404);
-  z-index: -1;
 }
 .servicios-transporte .servTransporte .servTransporte-galeria div {
   display: flex;
@@ -761,8 +756,8 @@ body {
 }
 .servicios-transporte .servTransporte .servTransporte-galeria div img {
   object-fit: cover;
-  width: 10vw;
-  height: auto;
+  width: 15vw;
+  height: 15vw;
   border-radius: 50px;
 }
 
@@ -782,7 +777,6 @@ body {
   background: rgba(255, 255, 255, 0.435);
   border-radius: 100px;
   padding: 10px;
-  z-index: -1;
 }
 .servicios-gruas .servGruas {
   display: flex;
@@ -804,7 +798,7 @@ body {
 .servicios-gruas .servGruas ul li {
   font-family: "Ubuntu", sans-serif;
   font-size: 3vw;
-  text-align: center;
+  text-align: justify;
 }
 .servicios-gruas .servGruas .serGruas-galeria {
   display: flex;
@@ -819,7 +813,6 @@ body {
   border-width: 8px;
   padding: 40px;
   background-color: rgba(176, 173, 173, 0.404);
-  z-index: -1;
 }
 .servicios-gruas .servGruas .serGruas-galeria div {
   display: flex;
@@ -831,8 +824,8 @@ body {
 }
 .servicios-gruas .servGruas .serGruas-galeria div img {
   object-fit: cover;
-  width: 10vw;
-  height: auto;
+  width: 15vw;
+  height: 15vw;
   border-radius: 50px;
 }
 
@@ -853,7 +846,6 @@ body {
   z-index: -1;
 }
 .fragata .fragata-info {
-  z-index: -1;
   border-radius: 75px;
   border-style: groove;
   border-color: black;

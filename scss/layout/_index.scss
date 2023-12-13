@@ -16,12 +16,11 @@ body{
     .servicios{
         @include display-flex(row,center,center,nowrap,15px);
         .card{
-            z-index: -1;
             background-color: rgba(255, 255, 255, 0.435);
             overflow: hidden;
             border-radius: 20px;
             img{
-                @include width-height(400px,350px);
+                @include width-height(23vw,23vw);
                 border-radius: 20px;
                 object-fit: cover;
                 filter: grayscale(90%);

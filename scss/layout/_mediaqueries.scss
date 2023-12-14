@@ -34,28 +34,7 @@
             }
         }
     }
-
-    //serv-navales
-    .servicios-navales{
-        .servNavales{
-            ul{
-                li{
-                    font-size: 1.7vw;
-                }
-            }
-            .serNavales-galeria{
-                flex-direction: row;
-                padding: 20px;
-                div{
-                    flex-direction: column;
-                    img{
-                        @include width-height(16vw,auto);
-                    }
-                }
-            }
-        }
-    }
-
+    
     //serv-petroleros
     .servicios-petroleros{
         .servPetroleros{
@@ -70,4 +49,60 @@
     }
 
     
+}
+@media only screen and (max-width: 1199.99px){
+    //navbar
+    .generalNavBar{
+        gap: 15vw;
+        .nbDiv1{
+            h1{
+                position: relative;
+                top: -15px;
+            }
+        }
+        .nbDiv2{
+            .btn{
+                font-size: 1.4vw;
+            }
+        }
+    }
+    //footer
+    .footer{
+        .icon{
+            span{
+                a{
+                    svg{
+                        position: relative;
+                        top: -1px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media only screen and (max-width: 991.99px){
+    .generalNavBar{
+        gap: 10vw;
+        .nbDiv1{
+            h1{
+                position: relative;
+                top: -20px;
+            }
+        }
+        .nbDiv2{
+            .btn{
+                font-size: 1.4vw;
+
+            }
+        }
+    }
+    .footer{
+        .wrapper{
+            .icon{
+                @include width-height(25px,25px);
+                
+            }
+        }
+    }
 }

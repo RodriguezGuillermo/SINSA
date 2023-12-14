@@ -10,11 +10,7 @@
     .servGruas{
         @include display-flex(row, center,center,nowrap,30px);
         ul{
-            //@include border-style(75px,groove,grey,5px);
-            @include text-border-style(rgb(189, 189, 189),none,40vw,30px);
-            background-color: transparent;
-            border-top-left-radius: 0px;
-            border-bottom-right-radius: 0px;
+            @include text-border-style(transparent,none,40vw,30px);
             li{
                 @include font-style($text-font,3vw,justify);
             }
@@ -22,7 +18,7 @@
         .serGruas-galeria{
             @include display-flex(column, center,center,nowrap,10px);
             @include border-style(50px,double,grey,8px);
-            padding: 40px;
+            padding: 1.5vw;
             background-color: rgba(176, 173, 173, 0.404);
             div{
                 @include display-flex(row,center,center,wrap,10px);

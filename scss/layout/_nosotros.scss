@@ -56,18 +56,20 @@
 }
 .clientes{
     background: linear-gradient(rgb(189, 189, 189),60%, rgb(0, 0, 0));
-    border-radius:150px ;
-    margin: 5px 30px;
+    border-radius:75px ;
+    width: 80%;
     padding: 20px;
+    position: relative;
+    left: 10vw;
     @include display-flex (column, center,center,nowrap,10px);
     h2{
-        @include font-style($text-font,60px,center);
+        @include font-style($text-font,4vw,center);
     }
     .carousels{
         @include display-flex (row, center,center,wrap,10vw);
         .carousel{
             .carousel-inner{
-                @include width-height(20vw,20vw);
+                @include width-height(15vw,15vw);
                 display: flex;
                 align-items: center;
                 .carousel-item{

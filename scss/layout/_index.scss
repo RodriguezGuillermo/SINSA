@@ -4,17 +4,16 @@ body{
     background-size: cover;
 }
 .sectionIndex{
-    z-index: -1;
-    padding: 20px 50px;
+    padding: 20px 20px;
     @include display-flex(column,center,center,nowrap,10px);
     h2{
-        @include font-style($title-font,50px,center);
+        @include font-style($title-font,3.5vw,center);
         background: rgba(255, 255, 255, 0.435);
         border-radius: 100px;
         padding: 10px;
     }
     .servicios{
-        @include display-flex(row,center,center,nowrap,15px);
+        @include display-flex(row,center,center,nowrap,1vw);
         .card{
             background-color: rgba(255, 255, 255, 0.435);
             overflow: hidden;
@@ -38,7 +37,7 @@ body{
             
             .card-body{
                 h5{
-                    @include font-style($title-font,30px,center);
+                    @include font-style($title-font,1.8vw,center);
                 }
             }
         }

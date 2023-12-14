@@ -17,13 +17,13 @@
             border-top-left-radius: 0px;
             border-bottom-right-radius: 0px;
             li{
-                @include font-style($text-font,1.5vw,justify);
+                @include font-style($text-font,1.7vw,justify);
             }
         }
         .serNavales-galeria{
             @include display-flex(column, center,center,nowrap,10px);
             @include border-style(50px,double,grey,8px);
-            padding: 40px;
+            padding: 2vw;
             background-color: rgba(176, 173, 173, 0.404);
             
             div{ 

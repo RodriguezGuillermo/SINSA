@@ -3,8 +3,7 @@
     
     @include display-flex(column, center,center,nowrap,20px);
     h2{
-        z-index: -1;
-        @include font-style($title-font,50px,center);
+        @include font-style($title-font,4vw,center);
         background: rgba(255, 255, 255, 0.435);
         border-radius: 100px;
         padding: 10px;

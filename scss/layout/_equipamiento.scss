@@ -1,5 +1,5 @@
 .equipo{
-    padding: 10px;
+    margin-top: 20px;
     @include display-flex(column, center, center, nowrap, 20px);
     .info{
         @include display-flex(row, center, center, nowrap, 20px);
@@ -9,13 +9,13 @@
             img{
                 object-fit: cover;
                 @include border-style(75px,groove,grey,5px);
-                @include width-height(23vw,15vw);
+                @include width-height(20vw,12vw);
             }
         }
         .texto{
-            width: 40vw;
+            width: 50vw;
             @include border-style(100px,groove,grey,5px);
-            background-color: rgb(189, 189, 189);
+            background: linear-gradient(rgba(255, 255, 255, 0.435),20%,rgb(189, 189, 189),rgba(255, 255, 255, 0.435));
             padding: 40px;
             h2{
                 @include font-style($title-font,2.5vw,center);

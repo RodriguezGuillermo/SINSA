@@ -11,7 +11,6 @@
         @include display-flex(row, center,center,nowrap,30px);
         
         ul{
-            //@include border-style(100px,groove,grey,5px);
             @include text-border-style(rgb(189, 189, 189),square,40vw,40px);
             background-color: transparent;
             border-top-left-radius: 0px;

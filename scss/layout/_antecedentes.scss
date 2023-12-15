@@ -5,7 +5,6 @@
     h2{
         @include font-style($title-font,4vw,center);
         text-decoration: underline;
-        z-index: -1;
     }
     .fragata-info{
         @include border-style(75px,groove,black,5px);
@@ -14,13 +13,16 @@
         border-top-right-radius: 0px;
         background: linear-gradient(rgb(189, 189, 189),60%, rgba(255, 255, 255, 0.435));
         padding: 5px;
-        iframe{
-            @include width-height(35vw, 35vw);
-            border-radius: 20px;
+        div{
+            iframe{
+                @include width-height(30vw, 30vw);
+                border-radius: 25px;
+                margin-bottom: 20px;    
+            }
         }
+        
         p{
             width: 60vw;
-
             @include font-style($title-font,2vw,justify);
         }
     }
@@ -32,7 +34,7 @@
     h2{
         @include font-style($title-font,4vw,center);
         text-decoration: underline;
-        padding: 40px 0px;
+        padding: 40px 0px 20px 0px;
         margin:0px;
     }
     .irizar-info{
@@ -46,7 +48,6 @@
                 
                 @include display-flex(row,center,center,wrap,10px);
                 img{
-                    
                     @include width-height(12vw,12vw);
                     object-fit: cover;
                     border-radius: 75px;
@@ -55,7 +56,7 @@
         }
         p{
             width: 30vw;
-            @include font-style($title-font,2.3vw,justify);
+            @include font-style($title-font,2vw,justify);
             color: black;
             position: relative;
         }

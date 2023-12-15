@@ -4,17 +4,15 @@
         padding-bottom:10px;
         .nbDiv1{
             h1{
-                position: relative;
+                transform: translateY(-15px);
                 top: -10px;
             }
         }
         .nbDiv2{
             gap: 1.3vw;
             .btn{
+                transform: translateY(5px);
                 font-size: 1.3vw;
-                position: relative;
-
-                
             }
         }
     }
@@ -56,7 +54,6 @@
         gap: 15vw;
         .nbDiv1{
             h1{
-                position: relative;
                 top: -15px;
             }
         }
@@ -82,12 +79,12 @@
 
 }
 @media only screen and (max-width: 991.99px){
+    //navbar
     .generalNavBar{
-        gap: 10vw;
+        gap: 5vw;
         .nbDiv1{
             h1{
-                position: relative;
-                top: -20px;
+                transform: translateY(-20px);
             }
         }
         .nbDiv2{
@@ -97,11 +94,228 @@
             }
         }
     }
+    //footer
     .footer{
         .wrapper{
             .icon{
                 @include width-height(25px,25px);
+                span{
+                    svg{
+                        color: white;
+                    }
+                }
+                .tooltip{
+                    display: none;
+                }
+            }
+            .whatsapp{
+                background: green;
+            }
+            .facebook{
+                background: #1877F2;
+            }
+            .instagram{
+                background: $instagram-background;
+            }
+        }
+    }
+    //index
+    .sectionIndex{
+        
+        .servicios{
+            flex-direction: column;
+            div{
+                .card{
+                    img{
+                        @include width-height(30vw,30vw)
+                    }
+                    .card-body{
+                        h5{
+                            font-size: 2.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //servicios navales
+    .servicios-navales{
+        .servNavales{
+            flex-direction: column;
+            gap: 10px;
+            ul{
+                @include text-border-style(transparent,square,70vw,20px);
+
+                li{
+                    font-size: 2.3vw;
+                    font-weight: bold;
+                }
+            }
+            .serNavales-galeria{
+                div{
+                    img{
+                        @include width-height(20vw,20vw);
+                    }
+                }
+            }
+        }
+        
+    }
+    //servicios industria petrolera
+    .servicios-petroleros{
+        .servPetroleros{
+            flex-direction: column;
+            gap: 10px;
+            ul{
+                @include text-border-style(transparent,square,70vw,20px);
+
+                li{
+                    font-size: 2.3vw;
+                    font-weight: bold;
+                }
+            }
+            .servPetroleros-galeria{
+                flex-direction: row;
+                div{
+                    flex-direction: column;
+                    img{
+                        @include width-height(20vw,20vw);
+                    }
+                }
+            }
+        }
+    }
+    //servicios transporte de residuos
+    .servicios-transporte{
+        .servTransporte{
+            flex-direction: column;
+            gap: 10px;
+            ul{
+                @include text-border-style(transparent,square,70vw,20px);
+
+                li{
+                    font-size: 3vw;
+                    font-weight: bold;
+                }
+            }
+            .servTransporte-galeria{
+                div{
+                    img{
+                        @include width-height(20vw,20vw);
+                    }
+                }
+            }
+        }
+    }
+    //servicios de gruas
+    .servicios-gruas{
+        .servGruas{
+            flex-direction: column;
+            gap: 10px;
+            ul{
+                @include text-border-style(transparent,square,70vw,20px);
+
+                li{
+                    font-size: 3vw;
+                    font-weight: bold;
+                }
+            }
+            .serGruas-galeria{
                 
+                div{
+                    flex-direction:row ;
+                    img{
+                        @include width-height(30vw,30vw);
+                    }
+                }
+            }
+        }
+    }
+    //antecedentes
+    .fragata{
+        .fragata-info{
+            div{
+                iframe{
+                    @include width-height(400px, 400px);
+                    
+                }
+            }
+            p{
+                font-size: 2.5vw;
+            }
+        }
+    }
+    .irizar{
+        .irizar-info{
+            flex-direction: column;
+            width: 65vw;;
+            .irizar-galeria{
+                div{
+                    img{
+                        @include width-height(15vw,15vw);
+                        border-radius: 50px;
+                    }
+                }
+                
+            }
+            p{
+                width: 80%;
+                font-size:2.5vw ;
+            }
+        }
+        
+    }
+    //equipamiento
+    .equipo{
+        .info{
+            .imagenes{
+                img{
+                    @include width-height(25vw,15vw);
+                }
+            }
+            .texto{
+                p{
+                    font-size: 1.7vw;
+                }
+            }
+        }
+    }
+    .equipamiento{
+        .equipamiento-info{
+            p{
+                font-size: 1.8vw;
+            }
+        }
+    }
+    //quienes somos
+    .empresa{
+        .info1{
+            div{
+                p{
+                    font-size: 1.7vw;
+                }
+            }
+            img{
+                @include width-height(25vw,auto);
+                border-radius: 50px;
+            }
+        }
+        .info2{
+            width: 100%;
+            img{
+                @include width-height(30vw,auto);
+                border-radius: 50px;
+                @include width-height(35vw,auto);
+            }
+            div{
+                p{
+                    font-size: 1.8vw;
+                }
+                ul{
+                    li{
+                        font-size: 1.6vw;
+                    }
+                } 
             }
         }
     }

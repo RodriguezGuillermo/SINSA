@@ -19,6 +19,8 @@
   width: auto;
   height: auto;
   background-color: rgb(212, 212, 212);
+  width: 100%;
+  justify-content: space-between;
 }
 .generalNavBar .nbDiv1 {
   display: flex;
@@ -32,8 +34,6 @@
   font-family: "Poltawski Nowy", serif;
   font-size: 2vw;
   text-align: center;
-  position: relative;
-  top: -5px;
 }
 .generalNavBar .nbDiv1 h1 a {
   text-decoration: none;
@@ -53,29 +53,24 @@
   flex-wrap: nowrap;
   gap: 1.5vw;
   z-index: 1000;
+  margin-right: 1vw;
 }
 .generalNavBar .nbDiv2 .btn {
-  position: relative;
-  top: 5px;
   border-radius: 15px;
   border-style: inset;
   border-color: rgb(167, 167, 167);
-  border-width: 3px;
   border-width: 0px;
-  border-bottom: 1px;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.3vw;
   text-align: center;
-  position: relative;
   transition: all ease-in-out 0.1s;
+  transform: translate(5px);
 }
 .generalNavBar .nbDiv2 .btn:hover {
   border-radius: 75px;
-  border-width: 5px;
-  padding: 10px;
+  border-width: 0.5vw;
 }
 .generalNavBar .nbDiv2 .dropdown-menu {
-  z-index: 1;
   background-color: rgb(212, 212, 212);
   align-items: center;
   display: column;
@@ -218,12 +213,26 @@ body {
   flex-wrap: nowrap;
   gap: 1vw;
 }
-.sectionIndex .servicios .card {
+.sectionIndex .servicios div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1vw;
+}
+.sectionIndex .servicios div .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1vw;
   background-color: rgba(255, 255, 255, 0.435);
   overflow: hidden;
   border-radius: 20px;
 }
-.sectionIndex .servicios .card img {
+.sectionIndex .servicios div .card img {
   width: 23vw;
   height: 23vw;
   border-radius: 20px;
@@ -231,13 +240,13 @@ body {
   filter: grayscale(90%);
   transform: scale(0.8);
 }
-.sectionIndex .servicios .card:hover img {
+.sectionIndex .servicios div .card:hover img {
   transition: all 0.5s ease-in-out;
   filter: grayscale(0%);
   -webkit-transform: scale(-1.3);
   transform: scale(1);
 }
-.sectionIndex .servicios .card .card-body h5 {
+.sectionIndex .servicios div .card .card-body h5 {
   font-family: "Poltawski Nowy", serif;
   font-size: 1.8vw;
   text-align: center;
@@ -253,9 +262,8 @@ body {
   gap: 20px;
 }
 .sectionContacto h2 {
-  z-index: -1;
   font-family: "Poltawski Nowy", serif;
-  font-size: 50px;
+  font-size: 4vw;
   text-align: center;
   background: rgba(255, 255, 255, 0.435);
   border-radius: 100px;
@@ -323,7 +331,6 @@ body {
   gap: 20px;
 }
 .empresa .info1 div {
-  z-index: -1;
   border-radius: 75px;
   border-style: groove;
   border-color: grey;
@@ -446,7 +453,7 @@ body {
 }
 
 .equipo {
-  padding: 10px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -477,16 +484,16 @@ body {
   border-style: groove;
   border-color: grey;
   border-width: 5px;
-  width: 23vw;
-  height: 15vw;
+  width: 20vw;
+  height: 12vw;
 }
 .equipo .info .texto {
-  width: 40vw;
+  width: 50vw;
   border-radius: 100px;
   border-style: groove;
   border-color: grey;
   border-width: 5px;
-  background-color: rgb(189, 189, 189);
+  background: linear-gradient(rgba(255, 255, 255, 0.435), 20%, rgb(189, 189, 189), rgba(255, 255, 255, 0.435));
   padding: 40px;
 }
 .equipo .info .texto h2 {
@@ -590,13 +597,10 @@ body {
   gap: 30px;
 }
 .servicios-navales .servNavales ul {
-  background-color: rgb(189, 189, 189);
+  background-color: transparent;
   list-style-type: square;
   width: 40vw;
   padding: 30px;
-  background-color: transparent;
-  border-top-left-radius: 0px;
-  border-bottom-right-radius: 0px;
 }
 .servicios-navales .servNavales ul li {
   font-family: "Ubuntu", sans-serif;
@@ -844,7 +848,6 @@ body {
   font-size: 4vw;
   text-align: center;
   text-decoration: underline;
-  z-index: -1;
 }
 .fragata .fragata-info {
   border-radius: 75px;
@@ -862,10 +865,11 @@ body {
   background: linear-gradient(rgb(189, 189, 189), 60%, rgba(255, 255, 255, 0.435));
   padding: 5px;
 }
-.fragata .fragata-info iframe {
-  width: 35vw;
-  height: 35vw;
-  border-radius: 20px;
+.fragata .fragata-info div iframe {
+  width: 30vw;
+  height: 30vw;
+  border-radius: 25px;
+  margin-bottom: 20px;
 }
 .fragata .fragata-info p {
   width: 60vw;
@@ -887,7 +891,7 @@ body {
   font-size: 4vw;
   text-align: center;
   text-decoration: underline;
-  padding: 40px 0px;
+  padding: 40px 0px 20px 0px;
   margin: 0px;
 }
 .irizar .irizar-info {
@@ -929,7 +933,7 @@ body {
 .irizar .irizar-info p {
   width: 30vw;
   font-family: "Poltawski Nowy", serif;
-  font-size: 2.3vw;
+  font-size: 2vw;
   text-align: justify;
   color: black;
   position: relative;
@@ -940,15 +944,15 @@ body {
     padding-bottom: 10px;
   }
   .generalNavBar .nbDiv1 h1 {
-    position: relative;
+    transform: translateY(-15px);
     top: -10px;
   }
   .generalNavBar .nbDiv2 {
     gap: 1.3vw;
   }
   .generalNavBar .nbDiv2 .btn {
+    transform: translateY(5px);
     font-size: 1.3vw;
-    position: relative;
   }
   .footer h3 {
     font-size: 2vw;
@@ -967,7 +971,6 @@ body {
     gap: 15vw;
   }
   .generalNavBar .nbDiv1 h1 {
-    position: relative;
     top: -15px;
   }
   .generalNavBar .nbDiv2 .btn {
@@ -980,11 +983,10 @@ body {
 }
 @media only screen and (max-width: 991.99px) {
   .generalNavBar {
-    gap: 10vw;
+    gap: 5vw;
   }
   .generalNavBar .nbDiv1 h1 {
-    position: relative;
-    top: -20px;
+    transform: translateY(-20px);
   }
   .generalNavBar .nbDiv2 .btn {
     font-size: 1.4vw;
@@ -992,6 +994,166 @@ body {
   .footer .wrapper .icon {
     width: 25px;
     height: 25px;
+  }
+  .footer .wrapper .icon span svg {
+    color: white;
+  }
+  .footer .wrapper .icon .tooltip {
+    display: none;
+  }
+  .footer .wrapper .whatsapp {
+    background: green;
+  }
+  .footer .wrapper .facebook {
+    background: #1877F2;
+  }
+  .footer .wrapper .instagram {
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  }
+  .sectionIndex .servicios {
+    flex-direction: column;
+  }
+  .sectionIndex .servicios div .card img {
+    width: 30vw;
+    height: 30vw;
+  }
+  .sectionIndex .servicios div .card .card-body h5 {
+    font-size: 2.5vw;
+  }
+  .servicios-navales .servNavales {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .servicios-navales .servNavales ul {
+    background-color: transparent;
+    list-style-type: square;
+    width: 70vw;
+    padding: 20px;
+  }
+  .servicios-navales .servNavales ul li {
+    font-size: 2.3vw;
+    font-weight: bold;
+  }
+  .servicios-navales .servNavales .serNavales-galeria div img {
+    width: 20vw;
+    height: 20vw;
+  }
+  .servicios-petroleros .servPetroleros {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .servicios-petroleros .servPetroleros ul {
+    background-color: transparent;
+    list-style-type: square;
+    width: 70vw;
+    padding: 20px;
+  }
+  .servicios-petroleros .servPetroleros ul li {
+    font-size: 2.3vw;
+    font-weight: bold;
+  }
+  .servicios-petroleros .servPetroleros .servPetroleros-galeria {
+    flex-direction: row;
+  }
+  .servicios-petroleros .servPetroleros .servPetroleros-galeria div {
+    flex-direction: column;
+  }
+  .servicios-petroleros .servPetroleros .servPetroleros-galeria div img {
+    width: 20vw;
+    height: 20vw;
+  }
+  .servicios-transporte .servTransporte {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .servicios-transporte .servTransporte ul {
+    background-color: transparent;
+    list-style-type: square;
+    width: 70vw;
+    padding: 20px;
+  }
+  .servicios-transporte .servTransporte ul li {
+    font-size: 3vw;
+    font-weight: bold;
+  }
+  .servicios-transporte .servTransporte .servTransporte-galeria div img {
+    width: 20vw;
+    height: 20vw;
+  }
+  .servicios-gruas .servGruas {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .servicios-gruas .servGruas ul {
+    background-color: transparent;
+    list-style-type: square;
+    width: 70vw;
+    padding: 20px;
+  }
+  .servicios-gruas .servGruas ul li {
+    font-size: 3vw;
+    font-weight: bold;
+  }
+  .servicios-gruas .servGruas .serGruas-galeria div {
+    flex-direction: row;
+  }
+  .servicios-gruas .servGruas .serGruas-galeria div img {
+    width: 30vw;
+    height: 30vw;
+  }
+  .fragata .fragata-info div iframe {
+    width: 400px;
+    height: 400px;
+  }
+  .fragata .fragata-info p {
+    font-size: 2.5vw;
+  }
+  .irizar .irizar-info {
+    flex-direction: column;
+    width: 65vw;
+  }
+  .irizar .irizar-info .irizar-galeria div img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50px;
+  }
+  .irizar .irizar-info p {
+    width: 80%;
+    font-size: 2.5vw;
+  }
+  .equipo .info .imagenes img {
+    width: 25vw;
+    height: 15vw;
+  }
+  .equipo .info .texto p {
+    font-size: 1.7vw;
+  }
+  .equipamiento .equipamiento-info p {
+    font-size: 1.8vw;
+  }
+  .empresa .info1 div p {
+    font-size: 1.7vw;
+  }
+  .empresa .info1 img {
+    width: 25vw;
+    height: auto;
+    border-radius: 50px;
+  }
+  .empresa .info2 {
+    width: 100%;
+  }
+  .empresa .info2 img {
+    width: 30vw;
+    height: auto;
+    border-radius: 50px;
+    width: 35vw;
+    height: auto;
+  }
+  .empresa .info2 div p {
+    font-size: 1.8vw;
+  }
+  .empresa .info2 div ul li {
+    font-size: 1.6vw;
   }
 }
 

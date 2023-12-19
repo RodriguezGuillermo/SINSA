@@ -1,17 +1,15 @@
-.generalNavBar{
+.navbar{
+    
     border-bottom: 4px solid black;
     padding-bottom:20px;
-    @include display-flex(row,center,center,nowrap,20vw);
-    @include width-height (auto, auto);
+    @include display-flex(row,center,center,nowrap,19vw);
     background-color: rgb(212, 212, 212);
     width: 100%;
-    justify-content: space-between;
     .nbDiv1{
-        @include display-flex(row,center,end,nowrap,0px);
+        @include display-flex(row,start,end,nowrap,0px);
         h1{
-            
             @include font-style($title-font,2vw,center);
-            
+            transform: translateY(-10px);
             a{
                 text-decoration: none;
                 color: inherit;
@@ -24,28 +22,52 @@
         }
     }
     .nbDiv2{
-        @include display-flex(row,center,center,nowrap,1.5vw);
-        z-index: 1000;
-        margin-right: 1vw;
-        
-        .btn{
-            @include border-style(15px, inset, rgb(167, 167, 167),0px);
-            @include font-style($text-font,1.3vw,center);
-            transition: all ease-in-out 0.1s;
-            transform: translate(5px);
-            &:hover{
-                border-radius: 75px;
-                border-width: 0.5vw;
+        .container{
+            
+            padding: 0px;
+            .btn-close{
+                .navbar-toggler-icon{
+                    padding: 20px !important;
+                }
             }
-        }
-        .dropdown-menu{ 
-            background-color:  rgb(212, 212, 212);
-            align-items: center;
-            display: column;
-            .dropdown-item{
-                @include font-style($title-font,1.3vw,center);
+            .offcanvas{
+                .offcanvas-body{
+                    .navbar-nav{
+                        @include display-flex(row,center,center,nowrap,1.5vw);
+                        width: 100%;
+                        padding: 0px;
+                        .nav-item{
+                            z-index: 1000;
+                            margin: 0px 10px;
+                            padding: 0px;
+                            width: 50%;
+                            @include border-style(15px, inset, rgb(167, 167, 167),0px);
+                            @include font-style($text-font,1.3vw,center);
+                            transform: translateY(5px);
+                            transition: all  0.5s ;
+                            &:hover{
+                                border-radius: 75px;
+                                font-weight: bold;
+                                transform: translateY(-5px);
+                            }
+                            .dropdown-menu{ 
+                                background-color:  rgb(212, 212, 212);
+                                align-items: center;
+                                display: column;
+                                .dropdown-item{
+                                    @include font-style($title-font,1.3vw,center);
+                                }
+                            }
+                            .nav-link{
+                                color: inherit;
+                                
+                            }
+                        }
+                    }
+                }
             }
-        }
 
+        }
     }
+    
 }

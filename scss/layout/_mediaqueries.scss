@@ -1,19 +1,27 @@
 @media only screen and (max-width: 1399.99px){
     //navbar
-    .generalNavBar{
+    .navbar{
         padding-bottom:10px;
         .nbDiv1{
             h1{
-                transform: translateY(-15px);
-                top: -10px;
+                transform: translateY(-10px);
             }
         }
         .nbDiv2{
-            gap: 1.3vw;
-            .btn{
-                transform: translateY(5px);
-                font-size: 1.3vw;
+            .container{
+                .offcanvas{
+                    .offcanvas-body{
+                        .navbar-nav{
+                            gap: 0vw;
+                            .nav-item{
+                                transform: translateY(5px);
+                                font-size: 1.5vw;
+                            }
+                        }
+                    }
+                }
             }
+            
         }
     }
 
@@ -50,17 +58,27 @@
 }
 @media only screen and (max-width: 1199.99px){
     //navbar
-    .generalNavBar{
-        gap: 15vw;
+    .navbar{
+        gap: 21.7vw;
         .nbDiv1{
             h1{
-                top: -15px;
+                transform: translateY(-16px);
+                font-size: 1.8vw;
             }
         }
         .nbDiv2{
-            .btn{
-                font-size: 1.4vw;
+            .container{
+                .offcanvas{
+                    .offcanvas-body{
+                        .navbar-nav{
+                            .nav-item{
+                                font-size: 1.3vw;
+                            }
+                        }
+                    }
+                }
             }
+            
         }
     }
     //footer
@@ -78,20 +96,40 @@
     }
 
 }
-@media only screen and (max-width: 991.99px){
+@media only screen and (max-width: 991px){
     //navbar
-    .generalNavBar{
-        gap: 5vw;
+    .navbar{
+        gap: 25vw;
         .nbDiv1{
             h1{
-                transform: translateY(-20px);
+                transform: translateY(-0.5vw);
+                font-size: 4vw;
             }
         }
         .nbDiv2{
-            .btn{
-                font-size: 1.4vw;
-
+            .container{
+                .offcanvas{
+                    .offcanvas-body{
+                        
+                        .navbar-nav{
+                            flex-direction: column;
+                            gap: 3vw;
+                            .nav-item{
+                                font-size: 3.5vw;
+                                
+                                .dropdown-menu{ 
+                                    background-color:  inherit;
+                                    width:25vw;
+                                    .dropdown-item{
+                                        font-size: 2vw
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
+            
         }
     }
     //footer
@@ -127,9 +165,11 @@
             div{
                 .card{
                     img{
-                        @include width-height(30vw,30vw)
+                        @include width-height(35vw,35vw)
                     }
                     .card-body{
+                        padding: 0px;
+                        width: 100%;
                         h5{
                             font-size: 2.5vw;
                         }

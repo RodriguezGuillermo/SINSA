@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 
-.generalNavBar {
+.navbar {
   border-bottom: 4px solid black;
   padding-bottom: 20px;
   display: flex;
@@ -15,47 +15,55 @@
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 20vw;
-  width: auto;
-  height: auto;
+  gap: 19vw;
   background-color: rgb(212, 212, 212);
   width: 100%;
-  justify-content: space-between;
 }
-.generalNavBar .nbDiv1 {
+.navbar .nbDiv1 {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-items: end;
   flex-wrap: nowrap;
   gap: 0px;
 }
-.generalNavBar .nbDiv1 h1 {
+.navbar .nbDiv1 h1 {
   font-family: "Poltawski Nowy", serif;
   font-size: 2vw;
   text-align: center;
+  transform: translateY(-10px);
 }
-.generalNavBar .nbDiv1 h1 a {
+.navbar .nbDiv1 h1 a {
   text-decoration: none;
   color: inherit;
 }
-.generalNavBar .nbDiv1 img {
+.navbar .nbDiv1 img {
   width: auto;
   height: 90px;
   position: relative;
   top: 5px;
 }
-.generalNavBar .nbDiv2 {
+.navbar .nbDiv2 .container {
+  padding: 0px;
+}
+.navbar .nbDiv2 .container .btn-close .navbar-toggler-icon {
+  padding: 20px !important;
+}
+.navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
   gap: 1.5vw;
-  z-index: 1000;
-  margin-right: 1vw;
+  width: 100%;
+  padding: 0px;
 }
-.generalNavBar .nbDiv2 .btn {
+.navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item {
+  z-index: 1000;
+  margin: 0px 10px;
+  padding: 0px;
+  width: 50%;
   border-radius: 15px;
   border-style: inset;
   border-color: rgb(167, 167, 167);
@@ -63,22 +71,26 @@
   font-family: "Ubuntu", sans-serif;
   font-size: 1.3vw;
   text-align: center;
-  transition: all ease-in-out 0.1s;
-  transform: translate(5px);
+  transform: translateY(5px);
+  transition: all 0.5s;
 }
-.generalNavBar .nbDiv2 .btn:hover {
+.navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item:hover {
   border-radius: 75px;
-  border-width: 0.5vw;
+  font-weight: bold;
+  transform: translateY(-5px);
 }
-.generalNavBar .nbDiv2 .dropdown-menu {
+.navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item .dropdown-menu {
   background-color: rgb(212, 212, 212);
   align-items: center;
   display: column;
 }
-.generalNavBar .nbDiv2 .dropdown-menu .dropdown-item {
+.navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item .dropdown-menu .dropdown-item {
   font-family: "Poltawski Nowy", serif;
   font-size: 1.3vw;
   text-align: center;
+}
+.navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
+  color: inherit;
 }
 
 .footer {
@@ -940,19 +952,18 @@ body {
 }
 
 @media only screen and (max-width: 1399.99px) {
-  .generalNavBar {
+  .navbar {
     padding-bottom: 10px;
   }
-  .generalNavBar .nbDiv1 h1 {
-    transform: translateY(-15px);
-    top: -10px;
+  .navbar .nbDiv1 h1 {
+    transform: translateY(-10px);
   }
-  .generalNavBar .nbDiv2 {
-    gap: 1.3vw;
+  .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav {
+    gap: 0vw;
   }
-  .generalNavBar .nbDiv2 .btn {
+  .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item {
     transform: translateY(5px);
-    font-size: 1.3vw;
+    font-size: 1.5vw;
   }
   .footer h3 {
     font-size: 2vw;
@@ -967,29 +978,42 @@ body {
   }
 }
 @media only screen and (max-width: 1199.99px) {
-  .generalNavBar {
-    gap: 15vw;
+  .navbar {
+    gap: 21.7vw;
   }
-  .generalNavBar .nbDiv1 h1 {
-    top: -15px;
+  .navbar .nbDiv1 h1 {
+    transform: translateY(-16px);
+    font-size: 1.8vw;
   }
-  .generalNavBar .nbDiv2 .btn {
-    font-size: 1.4vw;
+  .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item {
+    font-size: 1.3vw;
   }
   .footer .icon span a svg {
     position: relative;
     top: -1px;
   }
 }
-@media only screen and (max-width: 991.99px) {
-  .generalNavBar {
-    gap: 5vw;
+@media only screen and (max-width: 991px) {
+  .navbar {
+    gap: 25vw;
   }
-  .generalNavBar .nbDiv1 h1 {
-    transform: translateY(-20px);
+  .navbar .nbDiv1 h1 {
+    transform: translateY(-0.5vw);
+    font-size: 4vw;
   }
-  .generalNavBar .nbDiv2 .btn {
-    font-size: 1.4vw;
+  .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav {
+    flex-direction: column;
+    gap: 3vw;
+  }
+  .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item {
+    font-size: 3.5vw;
+  }
+  .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item .dropdown-menu {
+    background-color: inherit;
+    width: 25vw;
+  }
+  .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    font-size: 2vw;
   }
   .footer .wrapper .icon {
     width: 25px;
@@ -1014,8 +1038,12 @@ body {
     flex-direction: column;
   }
   .sectionIndex .servicios div .card img {
-    width: 30vw;
-    height: 30vw;
+    width: 35vw;
+    height: 35vw;
+  }
+  .sectionIndex .servicios div .card .card-body {
+    padding: 0px;
+    width: 100%;
   }
   .sectionIndex .servicios div .card .card-body h5 {
     font-size: 2.5vw;

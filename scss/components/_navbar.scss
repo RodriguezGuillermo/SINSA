@@ -16,7 +16,7 @@
             }
         }
         img{
-            @include width-height (auto, 90px);
+            @include width-height (90px, 90px);
             position: relative;
             top:5px;
         }

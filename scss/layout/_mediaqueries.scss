@@ -47,7 +47,7 @@
             .servPetroleros-galeria{
                 div{
                     img{
-                        @include width-height(15vw,auto);
+                        @include width-height(13vw,13vw);
                     }
                 }
             }
@@ -135,11 +135,16 @@
     //footer
     .footer{
         .wrapper{
+            padding: 0px;
             .icon{
-                @include width-height(25px,25px);
+                @include width-height(40px,40px);
+                
                 span{
-                    svg{
-                        color: white;
+                    a{
+                        svg{
+                            color: white;
+                            @include width-height(25px,25px);
+                        }
                     }
                 }
                 .tooltip{
@@ -170,7 +175,7 @@
                     .card-body{
                         padding: 0px;
                         width: 100%;
-                        h5{
+                        h3{
                             font-size: 2.5vw;
                         }
                     }
@@ -356,6 +361,22 @@
                         font-size: 1.6vw;
                     }
                 } 
+            }
+        }
+    }
+    //contacto
+    .sectionContacto{
+        .container{
+            flex-direction: column;
+            .direccion{
+                iframe{
+                    border-radius: 50px;
+                }
+            }
+            .telefonos{
+                ul{
+                    padding: 0px;
+                }
             }
         }
     }

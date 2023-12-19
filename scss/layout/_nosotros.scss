@@ -19,8 +19,9 @@
             }
         }
         img{
-            @include width-height(22vw,auto);
+            @include width-height(18vw,18vw);
             @include border-style(75px,groove,grey,5px);
+            object-fit: cover;
         }
     }
     .info2{

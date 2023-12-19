@@ -30,7 +30,7 @@
                 img{
                     object-fit: cover;
                     border-radius: 50px;
-                    @include width-height(13vw,auto);
+                    @include width-height(11vw,11vw);
                 }
             }
         }

@@ -38,7 +38,7 @@
   color: inherit;
 }
 .navbar .nbDiv1 img {
-  width: auto;
+  width: 90px;
   height: 90px;
   position: relative;
   top: 5px;
@@ -114,8 +114,12 @@
   font-size: 1.5vw;
 }
 .footer .wrapper {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
   list-style: none;
+  padding: 0px;
 }
 .footer .wrapper .icon {
   width: 2.5vw;
@@ -195,7 +199,7 @@
 }
 
 body {
-  background: url("../../images/bg.jpg");
+  background: url("../../images/background/bg.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -258,10 +262,14 @@ body {
   -webkit-transform: scale(-1.3);
   transform: scale(1);
 }
-.sectionIndex .servicios div .card .card-body h5 {
+.sectionIndex .servicios div .card .card-body h3 {
   font-family: "Poltawski Nowy", serif;
   font-size: 1.8vw;
   text-align: center;
+}
+.sectionIndex .servicios div .card .card-body h3 a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .sectionContacto {
@@ -308,6 +316,7 @@ body {
 .sectionContacto .container .direccion iframe {
   width: 40vw;
   height: 27vw;
+  border-radius: 25px;
 }
 .sectionContacto .container .telefonos {
   background-color: lightgray;
@@ -367,12 +376,13 @@ body {
   text-align: justify;
 }
 .empresa .info1 img {
-  width: 22vw;
-  height: auto;
+  width: 18vw;
+  height: 18vw;
   border-radius: 75px;
   border-style: groove;
   border-color: grey;
   border-width: 5px;
+  object-fit: cover;
 }
 .empresa .info2 {
   display: flex;
@@ -712,8 +722,8 @@ body {
 .servicios-petroleros .servPetroleros .servPetroleros-galeria div img {
   object-fit: cover;
   border-radius: 50px;
-  width: 13vw;
-  height: auto;
+  width: 11vw;
+  height: 11vw;
 }
 
 .servicios-transporte {
@@ -973,8 +983,8 @@ body {
     height: 40vw;
   }
   .servicios-petroleros .servPetroleros .servPetroleros-galeria div img {
-    width: 15vw;
-    height: auto;
+    width: 13vw;
+    height: 13vw;
   }
 }
 @media only screen and (max-width: 1199.99px) {
@@ -1015,12 +1025,17 @@ body {
   .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item .dropdown-menu .dropdown-item {
     font-size: 2vw;
   }
+  .footer .wrapper {
+    padding: 0px;
+  }
   .footer .wrapper .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .wrapper .icon span a svg {
+    color: white;
     width: 25px;
     height: 25px;
-  }
-  .footer .wrapper .icon span svg {
-    color: white;
   }
   .footer .wrapper .icon .tooltip {
     display: none;
@@ -1045,7 +1060,7 @@ body {
     padding: 0px;
     width: 100%;
   }
-  .sectionIndex .servicios div .card .card-body h5 {
+  .sectionIndex .servicios div .card .card-body h3 {
     font-size: 2.5vw;
   }
   .servicios-navales .servNavales {
@@ -1182,6 +1197,15 @@ body {
   }
   .empresa .info2 div ul li {
     font-size: 1.6vw;
+  }
+  .sectionContacto .container {
+    flex-direction: column;
+  }
+  .sectionContacto .container .direccion iframe {
+    border-radius: 50px;
+  }
+  .sectionContacto .container .telefonos ul {
+    padding: 0px;
   }
 }
 

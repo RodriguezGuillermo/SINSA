@@ -21,6 +21,7 @@
             }
             iframe{
                 @include width-height(40vw,27vw);
+                border-radius: 25px;
             }
         }
         .telefonos{

@@ -1,5 +1,5 @@
 body{
-    background: url('../../images/bg.jpg');
+    background: url('../../images/background/bg.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
@@ -39,8 +39,12 @@ body{
                 }
                 
                 .card-body{
-                    h5{
+                    h3{
                         @include font-style($title-font,1.8vw,center);
+                        a{
+                            text-decoration: none;
+                            color: inherit;
+                        }
                     }
                 }
             }

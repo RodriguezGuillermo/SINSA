@@ -381,3 +381,99 @@
         }
     }
 }
+@media only screen and (max-width: 576px) {
+    //navbar
+    .navbar{
+        width: 100%;
+        gap: 10vw;
+        .nbDiv1{
+            h1{
+                font-size: 4.5vw;
+            }
+            img{
+                @include width-height(15vw, 15vw);
+            }
+        }
+        .nbDiv2{
+            .container{
+                .btn{
+                    @include width-height(7vw,7vw);
+                    span{
+                        @include width-height(7vw,7vw);
+                        transform: translate(-2.2vw,-1vw);
+                    }
+                }
+                .offcanvas{
+                    .offcanvas-body{
+                        .navbar-nav{
+                            flex-direction: column;
+                            gap: 3vw;
+                            align-items: center;
+                            justify-content: center;
+                            .nav-item{
+                                display: flex;
+                                flex-direction: column;
+                                font-size: 3.5vw;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    //footer
+    .footer{
+        padding: 5px 0px 5px 0px;
+        margin: 0px;
+        h3{
+            font-size: 2.5vw;
+        }
+        .wrapper{
+            transform: translate(0px,-5px);
+            margin: 0px;
+            .icon{
+                
+                @include width-height(6vw,6vw);
+                margin: 5px;
+                span{
+                    a{
+                        svg{
+                            color: white;
+                            @include width-height(3vw,3vw);
+                            transform: translate(-0.5px,-1px);
+                        }
+                    }
+                }
+            }
+            .whatsapp{
+                background: green;
+            }
+            .facebook{
+                background: #1877F2;
+            }
+            .instagram{
+                background: $instagram-background;
+            }
+        }
+    }
+    //contacto
+    .sectionContacto{
+        .container{
+            flex-direction: column;
+            .direccion{
+                iframe{
+                    border-radius: 50px;
+                }
+            }
+            .telefonos{
+                ul{
+                    @include width-height(50vw,32vw);
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}

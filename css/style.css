@@ -1208,5 +1208,82 @@ body {
     padding: 0px;
   }
 }
+@media only screen and (max-width: 576px) {
+  .navbar {
+    width: 100%;
+    gap: 10vw;
+  }
+  .navbar .nbDiv1 h1 {
+    font-size: 4.5vw;
+  }
+  .navbar .nbDiv1 img {
+    width: 15vw;
+    height: 15vw;
+  }
+  .navbar .nbDiv2 .container .btn {
+    width: 7vw;
+    height: 7vw;
+  }
+  .navbar .nbDiv2 .container .btn span {
+    width: 7vw;
+    height: 7vw;
+    transform: translate(-2.2vw, -1vw);
+  }
+  .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav {
+    flex-direction: column;
+    gap: 3vw;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item {
+    display: flex;
+    flex-direction: column;
+    font-size: 3.5vw;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer {
+    padding: 5px 0px 5px 0px;
+    margin: 0px;
+  }
+  .footer h3 {
+    font-size: 2.5vw;
+  }
+  .footer .wrapper {
+    transform: translate(0px, -5px);
+    margin: 0px;
+  }
+  .footer .wrapper .icon {
+    width: 6vw;
+    height: 6vw;
+    margin: 5px;
+  }
+  .footer .wrapper .icon span a svg {
+    color: white;
+    width: 3vw;
+    height: 3vw;
+    transform: translate(-0.5px, -1px);
+  }
+  .footer .wrapper .whatsapp {
+    background: green;
+  }
+  .footer .wrapper .facebook {
+    background: #1877F2;
+  }
+  .footer .wrapper .instagram {
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  }
+  .sectionContacto .container {
+    flex-direction: column;
+  }
+  .sectionContacto .container .direccion iframe {
+    border-radius: 50px;
+  }
+  .sectionContacto .container .telefonos ul {
+    width: 50vw;
+    height: 32vw;
+    padding: 0px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

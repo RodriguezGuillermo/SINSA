@@ -1241,30 +1241,40 @@ body {
   .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item {
     display: flex;
     flex-direction: column;
-    font-size: 3.5vw;
+    font-size: 5vw;
     align-items: center;
     justify-content: center;
   }
+  .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item .dropdown-menu {
+    width: 45vw;
+  }
+  .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item .dropdown-menu .dropdown-item {
+    font-size: 3.5vw;
+  }
   .footer {
+    position: absolute;
+    width: 60vw;
+    transform: translateX(-50px);
     padding: 5px 0px 5px 0px;
     margin: 15px 0px;
   }
   .footer h3 {
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
   .footer .wrapper {
     transform: translate(0px, -5px);
     margin: 0px;
+    gap: 10px;
   }
   .footer .wrapper .icon {
-    width: 6vw;
-    height: 6vw;
+    width: 40px;
+    height: 40px;
     margin: 5px;
   }
   .footer .wrapper .icon span a svg {
     color: white;
-    width: 3vw;
-    height: 3vw;
+    width: 25px;
+    height: 25px;
   }
   .footer .wrapper .whatsapp {
     background: green;
@@ -1380,6 +1390,7 @@ body {
   }
   .irizar h2 {
     font-size: 6vw;
+    padding-bottom: 5px;
   }
   .irizar .irizar-info {
     gap: 10px;

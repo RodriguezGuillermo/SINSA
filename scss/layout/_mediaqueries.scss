@@ -414,9 +414,15 @@
                             .nav-item{
                                 display: flex;
                                 flex-direction: column;
-                                font-size: 3.5vw;
+                                font-size: 5vw;
                                 align-items: center;
                                 justify-content: center;
+                                .dropdown-menu{
+                                    width: 45vw;
+                                    .dropdown-item{
+                                        font-size: 3.5vw;
+                                    }
+                                }
                             }
                         }
                     }
@@ -427,23 +433,27 @@
     }
     //footer
     .footer{
+        position: absolute;
+        width: 60vw;
+        transform: translateX(-50px);
         padding: 5px 0px 5px 0px;
         margin: 15px 0px;
         h3{
-            font-size: 2.5vw;
+            font-size: 3vw;
         }
         .wrapper{
             transform: translate(0px,-5px);
             margin: 0px;
+            gap: 10px;
             .icon{
                 
-                @include width-height(6vw,6vw);
+                @include width-height(40px,40px);
                 margin: 5px;
                 span{
                     a{
                         svg{
                             color: white;
-                            @include width-height(3vw,3vw);
+                            @include width-height(25px,25px);
                             
                         }
                     }
@@ -599,6 +609,7 @@
     .irizar{
         h2{
             font-size: 6vw;
+            padding-bottom:5px ;
         }
         .irizar-info{
             gap: 10px;

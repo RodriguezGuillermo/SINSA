@@ -1221,13 +1221,16 @@ body {
     height: 15vw;
   }
   .navbar .nbDiv2 .container .btn {
-    width: 7vw;
-    height: 7vw;
+    width: 40px;
+    height: 40px;
   }
-  .navbar .nbDiv2 .container .btn span {
-    width: 7vw;
-    height: 7vw;
-    transform: translate(-2.2vw, -1vw);
+  .navbar .nbDiv2 .container .btn .navbar-toggler-icon {
+    width: 35px;
+    height: 35px;
+    transform: translate(-11px, -3.5px);
+  }
+  .navbar .nbDiv2 .container .offcanvas {
+    width: 70vw;
   }
   .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav {
     flex-direction: column;
@@ -1244,7 +1247,7 @@ body {
   }
   .footer {
     padding: 5px 0px 5px 0px;
-    margin: 0px;
+    margin: 15px 0px;
   }
   .footer h3 {
     font-size: 2.5vw;
@@ -1262,7 +1265,6 @@ body {
     color: white;
     width: 3vw;
     height: 3vw;
-    transform: translate(-0.5px, -1px);
   }
   .footer .wrapper .whatsapp {
     background: green;
@@ -1283,6 +1285,117 @@ body {
     width: 50vw;
     height: 32vw;
     padding: 0px;
+  }
+  .servicios-navales h2 {
+    font-size: 4vw;
+  }
+  .servicios-navales .servNavales {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .servicios-navales .servNavales ul {
+    padding: 5px;
+    margin-bottom: 0px;
+  }
+  .servicios-navales .servNavales ul li {
+    font-size: 2.5vw;
+  }
+  .servicios-navales .servNavales .serNavales-galeria {
+    border-radius: 25px;
+  }
+  .servicios-navales .servNavales .serNavales-galeria div img {
+    border-radius: 25px;
+  }
+  .servicios-petroleros h2 {
+    font-size: 4vw;
+  }
+  .servicios-petroleros .servPetroleros {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .servicios-petroleros .servPetroleros ul {
+    margin: 0px;
+    padding: 5px;
+  }
+  .servicios-petroleros .servPetroleros ul li {
+    font-size: 2.5vw;
+  }
+  .servicios-petroleros .servPetroleros .servPetroleros-galeria {
+    padding: 15px;
+    flex-direction: row;
+  }
+  .servicios-petroleros .servPetroleros .servPetroleros-galeria div img {
+    border-radius: 25px;
+  }
+  .servicios-transporte h2 {
+    font-size: 4vw;
+  }
+  .servicios-transporte .servTransporte ul {
+    margin: 0px;
+    padding: 5px;
+  }
+  .servicios-transporte .servTransporte ul li {
+    font-size: 4vw;
+  }
+  .servicios-transporte .servTransporte .servTransporte-galeria {
+    border-radius: 25px;
+  }
+  .servicios-transporte .servTransporte .servTransporte-galeria div img {
+    border-radius: 25px;
+  }
+  .servicios-gruas h2 {
+    font-family: 5vw;
+  }
+  .servicios-gruas .servGruas ul {
+    margin: 0px;
+    padding: 5px;
+  }
+  .servicios-gruas .servGruas ul li {
+    font-size: 4vw;
+  }
+  .servicios-gruas .servGruas .serGruas-galeria {
+    border-radius: 25px;
+  }
+  .servicios-gruas .servGruas .serGruas-galeria div img {
+    border-radius: 25px;
+  }
+  .fragata h2 {
+    font-size: 5vw;
+  }
+  .fragata .fragata-info {
+    margin: 0px;
+    padding: 0px 10px;
+  }
+  .fragata .fragata-info div {
+    height: 260px;
+  }
+  .fragata .fragata-info div iframe {
+    width: 300px;
+    height: 300px;
+    border-width: 100px;
+    margin: 0px;
+  }
+  .fragata .fragata-info p {
+    font-size: 2.5vw;
+  }
+  .irizar h2 {
+    font-size: 6vw;
+  }
+  .irizar .irizar-info {
+    gap: 10px;
+    width: 70vw;
+    padding: 15px 5px;
+    border-radius: 40px;
+  }
+  .irizar .irizar-info .irizar-galeria div img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 20px;
+  }
+  .irizar .irizar-info p {
+    width: 80%;
+    font-size: 3vw;
+    margin: 0px;
   }
 }
 

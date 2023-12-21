@@ -397,13 +397,14 @@
         .nbDiv2{
             .container{
                 .btn{
-                    @include width-height(7vw,7vw);
-                    span{
-                        @include width-height(7vw,7vw);
-                        transform: translate(-2.2vw,-1vw);
+                    @include width-height(40px,40px);
+                    .navbar-toggler-icon{
+                        @include width-height(35px,35px);
+                        transform: translate(-11px,-3.5px);
                     }
                 }
                 .offcanvas{
+                    width: 70vw;
                     .offcanvas-body{
                         .navbar-nav{
                             flex-direction: column;
@@ -427,7 +428,7 @@
     //footer
     .footer{
         padding: 5px 0px 5px 0px;
-        margin: 0px;
+        margin: 15px 0px;
         h3{
             font-size: 2.5vw;
         }
@@ -443,7 +444,7 @@
                         svg{
                             color: white;
                             @include width-height(3vw,3vw);
-                            transform: translate(-0.5px,-1px);
+                            
                         }
                     }
                 }
@@ -475,5 +476,150 @@
                 }
             }
         }
+    }
+    //servicios navales
+    .servicios-navales{
+        h2{
+            font-size: 4vw;
+        }
+        .servNavales{
+            flex-direction: column;
+            gap: 10px;
+            ul{
+                padding: 5px;
+                margin-bottom: 0px;
+                li{
+                    font-size: 2.5vw;
+                }
+            }
+            .serNavales-galeria{
+                border-radius: 25px;
+                div{
+                    img{
+                        border-radius: 25px;
+                    }
+                }
+            }
+        }
+    }
+    //servicios industria petrolera
+    .servicios-petroleros{
+        h2{
+            font-size: 4vw;
+        }
+        .servPetroleros{
+            flex-direction: column;
+            gap: 10px;
+            ul{
+                margin: 0px;
+                padding: 5px;
+                li{
+                    font-size: 2.5vw;
+                }
+            }
+            .servPetroleros-galeria{
+                padding: 15px;
+                flex-direction: row;
+                div{
+                    img{
+                        border-radius: 25px;
+                    }
+                }
+            }
+        }
+    }
+    //servicios transporte de residuos
+    .servicios-transporte{
+        h2{
+            font-size: 4vw;
+        }
+        .servTransporte{
+            ul{
+                margin: 0px;
+                padding: 5px;
+                li{
+                    font-size: 4vw;
+                }
+            }
+            .servTransporte-galeria{
+                border-radius: 25px;
+                div{
+                    img{
+                        border-radius: 25px;
+                    }
+                }
+            }
+        }
+    }
+    //servicios de gruas
+    .servicios-gruas{
+        h2{
+            font-family: 5vw;
+        }
+        .servGruas{
+            ul{
+                margin: 0px;
+                padding: 5px;
+
+                li{
+                    font-size: 4vw;
+                }
+            }
+            .serGruas-galeria{
+                border-radius: 25px;
+                div{
+                    img{
+                        border-radius: 25px;
+                    }
+                }
+            }
+        }
+    }
+    //antecedentes
+    .fragata{
+        h2{
+            font-size: 5vw;
+        }
+        .fragata-info{
+            margin: 0px;
+            padding: 0px 10px;
+            div{
+                height: 260px;
+                iframe{
+                    @include width-height(300px, 300px);
+                    border-width: 100px;
+                    margin: 0px;
+                }
+            }
+            p{
+                font-size: 2.5vw;
+            }
+        }
+    }
+    .irizar{
+        h2{
+            font-size: 6vw;
+        }
+        .irizar-info{
+            gap: 10px;
+            width: 70vw;
+            padding: 15px 5px;
+            border-radius: 40px;
+            .irizar-galeria{
+                div{
+                    img{
+                        @include width-height(15vw,15vw);
+                        border-radius: 20px;
+                    }
+                }
+                
+            }
+            p{
+                width: 80%;
+                font-size:3vw ;
+                margin: 0px;
+            }
+        }
+        
     }
 }

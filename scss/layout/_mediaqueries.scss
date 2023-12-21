@@ -439,15 +439,14 @@
         padding: 5px 0px 5px 0px;
         margin: 15px 0px;
         h3{
-            font-size: 3vw;
+            font-size: 3.5vw;
         }
         .wrapper{
             transform: translate(0px,-5px);
             margin: 0px;
             gap: 10px;
             .icon{
-                
-                @include width-height(40px,40px);
+                @include width-height(35px,35px);
                 margin: 5px;
                 span{
                     a{
@@ -467,6 +466,27 @@
             }
             .instagram{
                 background: $instagram-background;
+            }
+        }
+    }
+    //index
+    .sectionIndex{
+        h2{
+                font-size: 8vw;
+            }
+        .servicios{
+            flex-direction: column;
+            div{
+                .card{
+                    img{
+                        @include width-height(45vw,45vw)
+                    }
+                    .card-body{
+                        h3{
+                            font-size: 3.5vw;
+                        }
+                    }
+                }
             }
         }
     }
@@ -499,7 +519,7 @@
                 padding: 5px;
                 margin-bottom: 0px;
                 li{
-                    font-size: 2.5vw;
+                    font-size: 3.5vw;
                 }
             }
             .serNavales-galeria{
@@ -524,7 +544,7 @@
                 margin: 0px;
                 padding: 5px;
                 li{
-                    font-size: 2.5vw;
+                    font-size: 3.5vw;
                 }
             }
             .servPetroleros-galeria{
@@ -588,38 +608,42 @@
     //antecedentes
     .fragata{
         h2{
-            font-size: 5vw;
+            font-size: 7vw;
         }
         .fragata-info{
             margin: 0px;
-            padding: 0px 10px;
+            padding: 10px 5px 10px 5px;
+            border-radius: 0px;
+            width: 70vw;
             div{
-                height: 260px;
+                height: 50vw;
                 iframe{
-                    @include width-height(300px, 300px);
-                    border-width: 100px;
+                    @include width-height(60vw, 60vw);
+                    border-width: 0px;
                     margin: 0px;
                 }
             }
             p{
-                font-size: 2.5vw;
+                font-size: 3.5vw;
             }
         }
     }
     .irizar{
         h2{
-            font-size: 6vw;
+            font-size: 8vw;
             padding-bottom:5px ;
         }
         .irizar-info{
+            flex-direction: column-reverse;
             gap: 10px;
             width: 70vw;
             padding: 15px 5px;
             border-radius: 40px;
             .irizar-galeria{
                 div{
+                    gap: 25px;
                     img{
-                        @include width-height(15vw,15vw);
+                        @include width-height(16vw,16vw);
                         border-radius: 20px;
                     }
                 }
@@ -632,5 +656,38 @@
             }
         }
         
+    }
+    //contacto
+    .sectionContacto{
+        h2{
+            font-size: 7vw;
+        }
+        .container{
+            .direccion{
+                padding: 0px;
+                border-radius: 20px;
+
+                @include width-height(80vw,70vw);
+                h3{
+                    font-size: 5vw;
+                }
+                iframe{
+                    @include width-height(70vw,40vw);
+                    border-radius: 20px;
+                }
+            }
+            .telefonos{
+                @include width-height(60vw,70vw);
+                border-radius: 20px;
+                justify-content: center;
+                align-content:center ;
+                display: flex;
+                ul{
+                    li{
+                        font-size: 4.1vw;
+                    }
+                }
+            }
+        }
     }
 }

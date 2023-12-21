@@ -1259,7 +1259,7 @@ body {
     margin: 15px 0px;
   }
   .footer h3 {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   .footer .wrapper {
     transform: translate(0px, -5px);
@@ -1267,8 +1267,8 @@ body {
     gap: 10px;
   }
   .footer .wrapper .icon {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     margin: 5px;
   }
   .footer .wrapper .icon span a svg {
@@ -1284,6 +1284,19 @@ body {
   }
   .footer .wrapper .instagram {
     background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+  }
+  .sectionIndex h2 {
+    font-size: 8vw;
+  }
+  .sectionIndex .servicios {
+    flex-direction: column;
+  }
+  .sectionIndex .servicios div .card img {
+    width: 45vw;
+    height: 45vw;
+  }
+  .sectionIndex .servicios div .card .card-body h3 {
+    font-size: 3.5vw;
   }
   .sectionContacto .container {
     flex-direction: column;
@@ -1308,7 +1321,7 @@ body {
     margin-bottom: 0px;
   }
   .servicios-navales .servNavales ul li {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
   .servicios-navales .servNavales .serNavales-galeria {
     border-radius: 25px;
@@ -1328,7 +1341,7 @@ body {
     padding: 5px;
   }
   .servicios-petroleros .servPetroleros ul li {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
   .servicios-petroleros .servPetroleros .servPetroleros-galeria {
     padding: 15px;
@@ -1370,43 +1383,77 @@ body {
     border-radius: 25px;
   }
   .fragata h2 {
-    font-size: 5vw;
+    font-size: 7vw;
   }
   .fragata .fragata-info {
     margin: 0px;
-    padding: 0px 10px;
+    padding: 10px 5px 10px 5px;
+    border-radius: 0px;
+    width: 70vw;
   }
   .fragata .fragata-info div {
-    height: 260px;
+    height: 50vw;
   }
   .fragata .fragata-info div iframe {
-    width: 300px;
-    height: 300px;
-    border-width: 100px;
+    width: 60vw;
+    height: 60vw;
+    border-width: 0px;
     margin: 0px;
   }
   .fragata .fragata-info p {
-    font-size: 2.5vw;
+    font-size: 3.5vw;
   }
   .irizar h2 {
-    font-size: 6vw;
+    font-size: 8vw;
     padding-bottom: 5px;
   }
   .irizar .irizar-info {
+    flex-direction: column-reverse;
     gap: 10px;
     width: 70vw;
     padding: 15px 5px;
     border-radius: 40px;
   }
+  .irizar .irizar-info .irizar-galeria div {
+    gap: 25px;
+  }
   .irizar .irizar-info .irizar-galeria div img {
-    width: 15vw;
-    height: 15vw;
+    width: 16vw;
+    height: 16vw;
     border-radius: 20px;
   }
   .irizar .irizar-info p {
     width: 80%;
     font-size: 3vw;
     margin: 0px;
+  }
+  .sectionContacto h2 {
+    font-size: 7vw;
+  }
+  .sectionContacto .container .direccion {
+    padding: 0px;
+    border-radius: 20px;
+    width: 80vw;
+    height: 70vw;
+  }
+  .sectionContacto .container .direccion h3 {
+    font-size: 5vw;
+  }
+  .sectionContacto .container .direccion iframe {
+    width: 70vw;
+    height: 40vw;
+    border-radius: 20px;
+  }
+  .sectionContacto .container .telefonos {
+    width: 60vw;
+    height: 70vw;
+    border-radius: 20px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+  }
+  .sectionContacto .container .telefonos ul li {
+    font-size: 4.1vw;
   }
 }
 

@@ -43,14 +43,13 @@
         padding: 20px;
         background: linear-gradient(rgb(189, 189, 189),60%,rgba(255, 255, 255, 0.435));
         .irizar-galeria{
-            @include display-flex(column,center,center,wrap,10px);
             div{
                 
                 @include display-flex(row,center,center,wrap,10px);
                 img{
-                    @include width-height(12vw,12vw);
+                    @include width-height(15vw,15vw);
                     object-fit: cover;
-                    border-radius: 75px;
+                    border-radius: 50px;
                 }
             }
         }

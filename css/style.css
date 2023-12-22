@@ -99,27 +99,28 @@
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 5px;
-  width: 40vw;
-  height: auto;
+  gap: 1vw;
+  width: 30vw;
+  height: 7vw;
   border-radius: 100px;
   background-color: rgb(212, 212, 212);
-  padding: 10px 0px;
-  margin: 20px 0px;
-  left: 30%;
-  position: relative;
+  transform: translateX(34.5vw);
+  margin: 20px;
 }
-.footer h3 {
-  font-family: "Poltawski Nowy", serif;
-  font-size: 1.5vw;
+.footer p {
+  font-size: 1vw;
+  height: 1px;
 }
 .footer .wrapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 2vw;
   list-style: none;
   padding: 0px;
+  margin: 0px;
 }
 .footer .wrapper .icon {
   width: 2.5vw;
@@ -136,7 +137,6 @@
   border-width: 1px;
   position: relative;
   background: #ffffff;
-  margin: 0px 10px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -930,14 +930,6 @@ body {
   padding: 20px;
   background: linear-gradient(rgb(189, 189, 189), 60%, rgba(255, 255, 255, 0.435));
 }
-.irizar .irizar-info .irizar-galeria {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
 .irizar .irizar-info .irizar-galeria div {
   display: flex;
   flex-direction: row;
@@ -947,10 +939,10 @@ body {
   gap: 10px;
 }
 .irizar .irizar-info .irizar-galeria div img {
-  width: 12vw;
-  height: 12vw;
+  width: 15vw;
+  height: 15vw;
   object-fit: cover;
-  border-radius: 75px;
+  border-radius: 50px;
 }
 .irizar .irizar-info p {
   width: 30vw;
@@ -975,8 +967,9 @@ body {
     transform: translateY(5px);
     font-size: 1.5vw;
   }
-  .footer h3 {
-    font-size: 2vw;
+  .footer {
+    margin: 20px 0px;
+    transform: translateX(35.1vw);
   }
   .antecedentesMain .fragata-info iframe {
     width: 40vw;
@@ -1024,6 +1017,11 @@ body {
   }
   .navbar .nbDiv2 .container .offcanvas .offcanvas-body .navbar-nav .nav-item .dropdown-menu .dropdown-item {
     font-size: 2vw;
+  }
+  .footer {
+    width: 35vw;
+    height: 10vw;
+    transform: translateX(31.8vw);
   }
   .footer .wrapper {
     padding: 0px;
@@ -1154,10 +1152,11 @@ body {
   .irizar .irizar-info {
     flex-direction: column;
     width: 65vw;
+    gap: 10px;
   }
   .irizar .irizar-info .irizar-galeria div img {
-    width: 15vw;
-    height: 15vw;
+    width: 20vw;
+    height: 20vw;
     border-radius: 50px;
   }
   .irizar .irizar-info p {
@@ -1186,8 +1185,6 @@ body {
     width: 100%;
   }
   .empresa .info2 img {
-    width: 30vw;
-    height: auto;
     border-radius: 50px;
     width: 35vw;
     height: auto;
@@ -1252,14 +1249,13 @@ body {
     font-size: 3.5vw;
   }
   .footer {
-    position: absolute;
-    width: 60vw;
-    transform: translateX(-50px);
-    padding: 5px 0px 5px 0px;
+    width: 50vw;
+    height: 18vw;
+    transform: translateX(25.5vw);
     margin: 15px 0px;
   }
-  .footer h3 {
-    font-size: 3.5vw;
+  .footer p {
+    font-size: 2vw;
   }
   .footer .wrapper {
     transform: translate(0px, -5px);
@@ -1418,13 +1414,13 @@ body {
     gap: 25px;
   }
   .irizar .irizar-info .irizar-galeria div img {
-    width: 16vw;
-    height: 16vw;
+    width: 22vw;
+    height: 22vw;
     border-radius: 20px;
   }
   .irizar .irizar-info p {
     width: 80%;
-    font-size: 3vw;
+    font-size: 4vw;
     margin: 0px;
   }
   .sectionContacto h2 {
@@ -1454,6 +1450,112 @@ body {
   }
   .sectionContacto .container .telefonos ul li {
     font-size: 4.1vw;
+  }
+  .equipo .info {
+    gap: 0px;
+  }
+  .equipo .info .imagenes {
+    width: 35%;
+  }
+  .equipo .info .imagenes img {
+    width: 30vw;
+    height: 20vw;
+    border-radius: 25px;
+  }
+  .equipo .info .texto {
+    border-radius: 25px;
+    padding: 5px;
+    width: 60%;
+  }
+  .equipo .info .texto h2 {
+    font-size: 4vw;
+  }
+  .equipo .info .texto p {
+    font-size: 3vw;
+  }
+  .equipamiento .equipamiento-info {
+    width: 90vw;
+    border-radius: 25px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 15px;
+  }
+  .equipamiento .equipamiento-info h2 {
+    font-size: 4vw;
+  }
+  .equipamiento .equipamiento-info p {
+    font-size: 3.5vw;
+  }
+  .equipamiento .equipamiento-galeria {
+    border-radius: 25px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    padding: 10px;
+    width: 90vw;
+  }
+  .equipamiento .equipamiento-galeria div img {
+    border-radius: 25px;
+    width: 25vw;
+    height: 20vw;
+  }
+  .empresa {
+    gap: 0;
+  }
+  .empresa .info1 {
+    flex-direction: column;
+  }
+  .empresa .info1 div {
+    background: linear-gradient(rgba(255, 255, 255, 0.435), 20%, rgb(189, 189, 189));
+    border-radius: 75px;
+    width: 80vw;
+  }
+  .empresa .info1 div h2 {
+    font-size: 5vw;
+  }
+  .empresa .info1 div p {
+    font-size: 3.5vw;
+  }
+  .empresa .info1 img {
+    display: none;
+  }
+  .empresa .info2 {
+    flex-direction: column;
+    width: 100%;
+  }
+  .empresa .info2 img {
+    width: 60vw;
+    height: auto;
+  }
+  .empresa .info2 div {
+    background: linear-gradient(rgb(189, 189, 189), 40%, rgba(255, 255, 255, 0.435));
+    border-radius: 25px;
+    width: 80vw;
+  }
+  .empresa .info2 div h2 {
+    font-size: 5vw;
+  }
+  .empresa .info2 div p {
+    font-size: 3.5vw;
+  }
+  .empresa .info2 div ul li {
+    padding: 0px;
+    font-weight: bold;
+    font-size: 3vw;
+  }
+  .clientes {
+    padding: 20px;
+    border-radius: 50px;
+  }
+  .clientes h2 {
+    font-size: 8vw;
+  }
+  .clientes .carousels .carousel .carousel-inner {
+    width: 20vw;
+    height: 20vw;
+  }
+  .clientes .carousels .carousel .carousel-inner .carousel-item img {
+    width: 50vw;
+    height: auto;
   }
 }
 

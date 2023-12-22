@@ -27,9 +27,8 @@
 
     //footer
     .footer{
-        h3{
-            font-size: 2vw;
-        }
+        margin: 20px 0px;
+        transform: translateX(35.1vw);
     }
 
     //antecedentes
@@ -134,6 +133,8 @@
     }
     //footer
     .footer{
+        @include width-height (35vw, 10vw);
+        transform: translateX(31.8vw);
         .wrapper{
             padding: 0px;
             .icon{
@@ -293,11 +294,12 @@
     .irizar{
         .irizar-info{
             flex-direction: column;
-            width: 65vw;;
+            width: 65vw;
+            gap: 10px;
             .irizar-galeria{
                 div{
                     img{
-                        @include width-height(15vw,15vw);
+                        @include width-height(20vw,20vw);
                         border-radius: 50px;
                     }
                 }
@@ -348,7 +350,6 @@
         .info2{
             width: 100%;
             img{
-                @include width-height(30vw,auto);
                 border-radius: 50px;
                 @include width-height(35vw,auto);
             }
@@ -433,13 +434,11 @@
     }
     //footer
     .footer{
-        position: absolute;
-        width: 60vw;
-        transform: translateX(-50px);
-        padding: 5px 0px 5px 0px;
+        @include width-height (50vw, 18vw);
+        transform: translateX(25.5vw);
         margin: 15px 0px;
-        h3{
-            font-size: 3.5vw;
+        p{
+            font-size: 2vw;
         }
         .wrapper{
             transform: translate(0px,-5px);
@@ -643,7 +642,7 @@
                 div{
                     gap: 25px;
                     img{
-                        @include width-height(16vw,16vw);
+                        @include width-height(22vw,22vw);
                         border-radius: 20px;
                     }
                 }
@@ -651,7 +650,7 @@
             }
             p{
                 width: 80%;
-                font-size:3vw ;
+                font-size:4vw ;
                 margin: 0px;
             }
         }
@@ -690,4 +689,128 @@
             }
         }
     }
+    //equipamiento
+    .equipo{
+        
+        .info{
+            gap: 0px;
+            .imagenes{
+                width: 35%;
+                img{
+                    @include width-height(30vw,20vw);
+                    border-radius: 25px;
+                }
+            }
+            .texto{
+                border-radius: 25px;
+                padding: 5px;
+                width: 60%;
+                h2{
+                    font-size: 4vw;
+                }
+                p{
+                    font-size:3vw;
+                }
+            }
+        }
+    }
+    .equipamiento{
+        .equipamiento-info{
+            width: 90vw;
+            border-radius: 25px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            padding: 15px;
+            h2{
+                font-size: 4vw;
+            }
+            p{
+                font-size: 3.5vw;
+            }
+        }
+        .equipamiento-galeria{
+            border-radius: 25px;
+            border-top-right-radius: 0px;
+            border-top-left-radius: 0px;
+            padding: 10px;
+            width: 90vw;
+            div{
+                img{
+                    border-radius: 25px;
+                    @include width-height(25vw,20vw);
+                }
+            }
+
+        }
+    }
+    //quienes somos
+    .empresa{
+        gap: 0;
+        .info1{
+            flex-direction: column;
+            div{
+                background: linear-gradient(rgba(255, 255, 255, 0.435),20%,rgb(189, 189, 189));
+                border-radius: 75px;
+                width: 80vw;
+                h2{
+                    font-size: 5vw;
+                }
+                p{
+                    font-size: 3.5vw;
+                }
+            }
+            img{
+                display: none;
+            }
+            
+        }
+        .info2{
+            flex-direction: column;
+            width: 100%;
+            img{
+                @include width-height(60vw,auto);
+            }
+            div{
+                background: linear-gradient(rgb(189, 189, 189),40%,rgba(255, 255, 255, 0.435));
+                border-radius: 25px;
+                width: 80vw;
+                h2{
+                    font-size: 5vw;
+                }
+                p{
+                    font-size: 3.5vw;
+                }
+                ul{
+                    li{
+                        padding: 0px;
+                        font-weight: bold;
+                        font-size: 3vw;
+                    }
+                } 
+            }
+        }
+    }
+    
+    .clientes{
+        padding: 20px;
+        border-radius: 50px;
+        h2{
+            font-size: 8vw
+        }
+        .carousels{
+            .carousel{
+                .carousel-inner{
+                    @include width-height(20vw,20vw);
+                    .carousel-item{
+                        img{
+                            @include width-height(50vw,auto);
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+    
+    
 }

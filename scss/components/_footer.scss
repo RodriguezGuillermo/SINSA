@@ -1,33 +1,27 @@
 .footer{
-    
-    @include display-flex(column,center,center,nowrap, 5px);
-    @include width-height (40vw, auto);
+    @include display-flex(column, center,center,nowrap,1vw);
+    @include width-height (30vw, 7vw);
     border-radius:100px ;
     background-color: rgb(212, 212, 212);
-    
-    padding: 10px 0px;
-    margin:20px 0px;
-    left: 30%;
-    position: relative;
-    h3{
-        font-family: $title-font;
-        font-size: 1.5vw;
+    transform: translateX(34.5vw);
+
+    margin: 20px;
+    p{
+        font-size: 1vw;
+        height: 1px;
     }
     .wrapper {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-content: center;
+        @include display-flex(row, center,center,nowrap,2vw);
         list-style: none;
         padding: 0px;
-    
+        margin: 0px;
+        
         .icon {
             @include width-height(2.5vw,2.5vw);
             @include display-flex(column, center, center,nowrap,0px);
             @include border-style(50px, groove, transparent, 1px);
             position: relative;
             background: #ffffff;
-            margin:0px 10px;
             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
             cursor: pointer;
             transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);

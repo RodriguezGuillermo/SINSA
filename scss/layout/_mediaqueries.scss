@@ -445,7 +445,7 @@
             margin: 0px;
             gap: 10px;
             .icon{
-                @include width-height(35px,35px);
+                @include width-height(30px,30px);
                 margin: 5px;
                 span{
                     a{
@@ -676,13 +676,14 @@
                 }
             }
             .telefonos{
-                @include width-height(60vw,70vw);
+                @include width-height(80vw,65vw);
                 border-radius: 20px;
                 justify-content: center;
                 align-content:center ;
                 display: flex;
                 ul{
                     li{
+                        width: 100%;
                         font-size: 4.1vw;
                     }
                 }
@@ -790,7 +791,6 @@
             }
         }
     }
-    
     .clientes{
         padding: 20px;
         border-radius: 50px;

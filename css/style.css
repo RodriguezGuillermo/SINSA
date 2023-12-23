@@ -1263,8 +1263,8 @@ body {
     gap: 10px;
   }
   .footer .wrapper .icon {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     margin: 5px;
   }
   .footer .wrapper .icon span a svg {
@@ -1441,14 +1441,15 @@ body {
     border-radius: 20px;
   }
   .sectionContacto .container .telefonos {
-    width: 60vw;
-    height: 70vw;
+    width: 80vw;
+    height: 65vw;
     border-radius: 20px;
     justify-content: center;
     align-content: center;
     display: flex;
   }
   .sectionContacto .container .telefonos ul li {
+    width: 100%;
     font-size: 4.1vw;
   }
   .equipo .info {

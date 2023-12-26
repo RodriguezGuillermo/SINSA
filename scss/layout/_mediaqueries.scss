@@ -107,6 +107,30 @@
             }
         }
     }
+    //contacto
+    .sectionContacto{
+        padding: 20px 0px;
+        
+        @include display-flex(column, center,center,nowrap,20px);
+        h2{
+            @include font-style($title-font,4vw,center);
+            background: rgba(255, 255, 255, 0.435);
+            border-radius: 100px;
+            padding: 10px;
+    
+        }
+        .container{
+            .direccion{
+                border-radius: 25px;
+            }
+            .telefonos{
+                border-radius: 25px;
+                ul{
+                    @include width-height(35vw,33vw);
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width: 991px){
     //navbar
@@ -382,13 +406,12 @@
         .container{
             flex-direction: column;
             .direccion{
-                iframe{
-                    border-radius: 50px;
-                }
             }
             .telefonos{
                 ul{
+                    height: 34vw;
                     padding: 0px;
+
                 }
             }
         }
@@ -688,12 +711,13 @@
                 }
             }
             .telefonos{
-                @include width-height(80vw,65vw);
+                
                 border-radius: 20px;
                 justify-content: center;
                 align-content:center ;
                 display: flex;
                 ul{
+                    @include width-height(80vw,65vw);
                     li{
                         width: 100%;
                         font-size: 4.1vw;

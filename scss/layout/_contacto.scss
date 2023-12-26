@@ -20,7 +20,7 @@
                 @include font-style($title-font,1.8vw,center);
             }
             iframe{
-                @include width-height(40vw,27vw);
+                @include width-height(45vw,27vw);
                 border-radius: 25px;
             }
         }
@@ -28,7 +28,7 @@
             background-color: lightgray;
             border-radius: 75px;
             ul{
-                @include width-height(35vw,31vw);
+                @include width-height(35vw,33vw);
                 list-style: none;
                 li{
                     @include font-style($text-font,2.2vw,center);

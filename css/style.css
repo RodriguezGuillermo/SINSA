@@ -314,7 +314,7 @@ body {
   text-align: center;
 }
 .sectionContacto .container .direccion iframe {
-  width: 40vw;
+  width: 45vw;
   height: 27vw;
   border-radius: 25px;
 }
@@ -324,7 +324,7 @@ body {
 }
 .sectionContacto .container .telefonos ul {
   width: 35vw;
-  height: 31vw;
+  height: 33vw;
   list-style: none;
 }
 .sectionContacto .container .telefonos ul li {
@@ -997,6 +997,33 @@ body {
     width: 12vw;
     height: 12vw;
   }
+  .sectionContacto {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+  .sectionContacto h2 {
+    font-family: "Poltawski Nowy", serif;
+    font-size: 4vw;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.435);
+    border-radius: 100px;
+    padding: 10px;
+  }
+  .sectionContacto .container .direccion {
+    border-radius: 25px;
+  }
+  .sectionContacto .container .telefonos {
+    border-radius: 25px;
+  }
+  .sectionContacto .container .telefonos ul {
+    width: 35vw;
+    height: 33vw;
+  }
 }
 @media only screen and (max-width: 991px) {
   .navbar {
@@ -1198,10 +1225,8 @@ body {
   .sectionContacto .container {
     flex-direction: column;
   }
-  .sectionContacto .container .direccion iframe {
-    border-radius: 50px;
-  }
   .sectionContacto .container .telefonos ul {
+    height: 34vw;
     padding: 0px;
   }
 }
@@ -1441,12 +1466,14 @@ body {
     border-radius: 20px;
   }
   .sectionContacto .container .telefonos {
-    width: 80vw;
-    height: 65vw;
     border-radius: 20px;
     justify-content: center;
     align-content: center;
     display: flex;
+  }
+  .sectionContacto .container .telefonos ul {
+    width: 80vw;
+    height: 65vw;
   }
   .sectionContacto .container .telefonos ul li {
     width: 100%;

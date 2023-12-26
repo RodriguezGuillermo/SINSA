@@ -20,17 +20,16 @@
             }
         }
         .servPetroleros-galeria{
-            @include display-flex(column, center,center,nowrap,10px);
             @include border-style(50px,double,grey,8px);
             padding: 40px;
             background-color: rgba(176, 173, 173, 0.404);
             
             div{
-                @include display-flex(row,center,center,nowrap,10px);
+                @include display-flex(column,center,center,nowrap,10px);
                 img{
                     object-fit: cover;
                     border-radius: 50px;
-                    @include width-height(11vw,11vw);
+                    @include width-height(12vw,12vw);
                 }
             }
         }

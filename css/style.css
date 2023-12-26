@@ -698,12 +698,6 @@ body {
   text-align: justify;
 }
 .servicios-petroleros .servPetroleros .servPetroleros-galeria {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  gap: 10px;
   border-radius: 50px;
   border-style: double;
   border-color: grey;
@@ -713,7 +707,7 @@ body {
 }
 .servicios-petroleros .servPetroleros .servPetroleros-galeria div {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
@@ -722,8 +716,8 @@ body {
 .servicios-petroleros .servPetroleros .servPetroleros-galeria div img {
   object-fit: cover;
   border-radius: 50px;
-  width: 11vw;
-  height: 11vw;
+  width: 12vw;
+  height: 12vw;
 }
 
 .servicios-transporte {
@@ -995,6 +989,14 @@ body {
     position: relative;
     top: -1px;
   }
+  .servicios-petroleros .servPetroleros .servPetroleros-galeria {
+    padding: 20px;
+  }
+  .servicios-petroleros .servPetroleros .servPetroleros-galeria div img {
+    border-radius: 25px;
+    width: 12vw;
+    height: 12vw;
+  }
 }
 @media only screen and (max-width: 991px) {
   .navbar {
@@ -1088,16 +1090,14 @@ body {
     list-style-type: square;
     width: 70vw;
     padding: 20px;
+    margin-bottom: 5px;
   }
   .servicios-petroleros .servPetroleros ul li {
     font-size: 2.3vw;
     font-weight: bold;
   }
-  .servicios-petroleros .servPetroleros .servPetroleros-galeria {
-    flex-direction: row;
-  }
   .servicios-petroleros .servPetroleros .servPetroleros-galeria div {
-    flex-direction: column;
+    flex-direction: row;
   }
   .servicios-petroleros .servPetroleros .servPetroleros-galeria div img {
     width: 20vw;
@@ -1269,8 +1269,8 @@ body {
   }
   .footer .wrapper .icon span a svg {
     color: white;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
   }
   .footer .wrapper .whatsapp {
     background: green;

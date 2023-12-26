@@ -93,7 +93,20 @@
             }
         }
     }
-
+    //servicios petroleros
+    .servicios-petroleros{
+        .servPetroleros{
+            .servPetroleros-galeria{
+                padding: 20px;
+                div{
+                    img{
+                        border-radius: 25px;
+                        @include width-height(12vw,12vw);
+                    }
+                }
+            }
+        }
+    }
 }
 @media only screen and (max-width: 991px){
     //navbar
@@ -214,16 +227,15 @@
             gap: 10px;
             ul{
                 @include text-border-style(transparent,square,70vw,20px);
-
+                margin-bottom: 5px;
                 li{
                     font-size: 2.3vw;
                     font-weight: bold;
                 }
             }
             .servPetroleros-galeria{
-                flex-direction: row;
                 div{
-                    flex-direction: column;
+                    flex-direction: row;
                     img{
                         @include width-height(20vw,20vw);
                     }
@@ -451,7 +463,7 @@
                     a{
                         svg{
                             color: white;
-                            @include width-height(25px,25px);
+                            @include width-height(20px,20px);
                             
                         }
                     }

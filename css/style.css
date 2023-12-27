@@ -1075,18 +1075,18 @@
   .footer .wrapper .instagram {
     background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
   }
-  .sectionIndex .servicios {
+  .bodyindex .sectionIndex .servicios {
     flex-direction: column;
   }
-  .sectionIndex .servicios div .card img {
+  .bodyindex .sectionIndex .servicios div .card img {
     width: 35vw;
     height: 35vw;
   }
-  .sectionIndex .servicios div .card .card-body {
+  .bodyindex .sectionIndex .servicios div .card .card-body {
     padding: 0px;
     width: 100%;
   }
-  .sectionIndex .servicios div .card .card-body h3 {
+  .bodyindex .sectionIndex .servicios div .card .card-body h3 {
     font-size: 2.5vw;
   }
   .servicios-navales .servNavales {
@@ -1305,17 +1305,17 @@
   .footer .wrapper .instagram {
     background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
   }
-  .sectionIndex h2 {
+  .bodyindex .sectionIndex h2 {
     font-size: 8vw;
   }
-  .sectionIndex .servicios {
+  .bodyindex .sectionIndex .servicios {
     flex-direction: column;
   }
-  .sectionIndex .servicios div .card img {
+  .bodyindex .sectionIndex .servicios div .card img {
     width: 45vw;
     height: 45vw;
   }
-  .sectionIndex .servicios div .card .card-body h3 {
+  .bodyindex .sectionIndex .servicios div .card .card-body h3 {
     font-size: 3.5vw;
   }
   .sectionContacto .container {

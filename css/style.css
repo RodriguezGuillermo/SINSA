@@ -199,7 +199,7 @@
 }
 
 body {
-  background: url("../../images/background/bg.jpg");
+  background: url("http://sinsa.com.ar/web/images/background/bg.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -270,12 +270,6 @@ body {
 .sectionIndex .servicios div .card .card-body h3 a {
   text-decoration: none;
   color: inherit;
-}
-
-body {
-  background: url("../../images/background/bg.jpg");
-  background-attachment: fixed;
-  background-size: cover;
 }
 
 .sectionContacto {
